@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import NavTabs from "./NavTabs";
-import Home from "./pages/Home";
-import Characters from "./pages/Characters";
-import Lists from "./pages/Lists";
-import Game from "./pages/Game";
+import NavTabs from "../NavTabs";
+import Footer from "../Footer/Footer";
+import Home from "../pages/Home";
+import Characters from "../pages/Characters";
+import Lists from "../pages/Lists";
+import Game from "../pages/Game";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -34,6 +35,7 @@ export default function PortfolioContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
+      <Footer />
     </div>
   );
 }

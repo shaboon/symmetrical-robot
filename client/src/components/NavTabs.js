@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 // TODO: Add a comment explaining how we are able to extract the key value pairs from props
 
@@ -8,45 +8,45 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#home"
-          onClick={() => handlePageChange('Home')}
+          onClick={() => handlePageChange("Home")}
           //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
 
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === "Home" ? "nav-link active" : "nav-link"}
         >
           Home
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
+          href="#characters"
+          onClick={() => handlePageChange("Characters")}
           //  TODO: Add a comment explaining what this logic is doing
 
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === "About" ? "nav-link active" : "nav-link"}
         >
-          About
+          Characters
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#blog"
-          onClick={() => handlePageChange('Blog')}
+          href="#list"
+          onClick={() => handlePageChange("Lists")}
           //  TODO: Add a comment explaining what this logic is doing
 
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === "Blog" ? "nav-link active" : "nav-link"}
         >
-          Blog
+          Lists
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#contact"
+          href="#game"
           //  TODO: Add a comment explaining what this logic is doing
 
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange("Game")}
+          className={currentPage === "Game" ? "nav-link active" : "nav-link"}
         >
-          Contact
+          Game
         </a>
       </li>
     </ul>

@@ -1,6 +1,11 @@
 import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer";
+import InterStellarContainer from "./components/InterStellarContainer/InterStellarContainer";
+import GalaxyBackground from "./components/GalaxyBackground";
 
-const App = () => <PortfolioContainer />;
+const App = () => (
+  <GalaxyBackground>
+    <InterStellarContainer />;
+  </GalaxyBackground>
+);
 
 export default App;
