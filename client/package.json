@@ -1,5 +1,5 @@
 {
-  "name": "verbose-goggles",
+  "name": "proj-3-sw",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
     "react": "^17.0.2",
+    "react-animated-stars": "^0.1.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
