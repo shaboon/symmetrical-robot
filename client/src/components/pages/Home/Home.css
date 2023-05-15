@@ -1,0 +1,85 @@
+.frame {
+    width: 500px;
+    border-radius: 20px;
+    height: 500px;
+    margin: 100px auto;
+    position: relative;
+    background: #000 url('http://jupiterjak.com/!img/stars.png') center/35%;
+}
+.wrap {
+    position: absolute;
+    top: -1000%;
+    bottom: 0;
+    width: 80%;
+    margin: auto;
+    height: 5500px;
+    color: #FFE81F;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: perspective(250px) rotateX(25deg);
+    -moz-transform: perspective(250px) rotateX(25deg);
+    -ms-transform: perspective(250px) rotateX(25deg);
+    -o-transform: perspective(250px) rotateX(25deg);
+    transform: perspective(250px) rotateX(25deg);
+}
+.path {
+    position: absolute;
+    top: 100%;
+    -webkit-animation: scroll 400s linear 4s infinite;
+    -moz-animation: scroll 400s linear 4s infinite;
+    -ms-animation: scroll 400s linear 4s infinite;
+    -o-animation: scroll 400s linear 4s infinite;
+    animation: scroll 400s linear 4s infinite;
+}
+.path .title {
+    text-align: center;
+}
+@-webkit-keyframes scroll {
+    0% {
+        top: 100%;
+   }
+    100% {
+        top: -170%;
+   }
+}
+@-moz-keyframes scroll {
+    0% {
+        top: 100%;
+   }
+    100% {
+        top: -170%;
+   }
+}
+@-ms-keyframes scroll {
+    0% {
+        top: 100%;
+   }
+    100% {
+        top: -170%;
+   }
+}
+@-o-keyframes scroll {
+    0% {
+        top: 100%;
+   }
+    100% {
+        top: -170%;
+   }
+}
+@keyframes scroll {
+    0% {
+        top: 100%;
+   }
+    100% {
+        top: -170%;
+   }
+}
