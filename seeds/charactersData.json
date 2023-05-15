@@ -216,6 +216,21 @@
         "Jedi Order",
         "Jedi High Council",
         "Galactic Republic"
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Rebels",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Rogue One: A Star Wars Story",
+        "Star Wars: Forces of Destiny"
+        "Obi-Wan Kenobi"
+        "Star Wars: Tales of the Jedi"
       ]
     },
     {
@@ -251,6 +266,20 @@
       "masters": "Luke Skywalker",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: Rebels",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Rogue One: A Star Wars Story",
+        "Star Wars: Forces of Destiny"
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Resistance"
+        "Star Wars: Episode IX - The Rise of Skywalker"
+        "Obi-Wan Kenobi"
       ]
     },
     {
@@ -275,6 +304,7 @@
       "formerAffiliations": [
         
       ]
+    
     },
     {
       "id": 7,
@@ -422,6 +452,21 @@
         "Jedi Order",
         "Jedi High Council",
         "Galactic Republic"
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Rebels",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Rogue One: A Star Wars Story",
+        "Star Wars: Forces of Destiny"
+        "Obi-Wan Kenobi"
+        "Star Wars: Tales of the Jedi"
       ]
     },
     {
