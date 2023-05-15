@@ -796,7 +796,7 @@
     },
     {
       "id": 21,
-      "name": "Palpatine",
+      "name": "Sheev Palpatine",
       "height": 1.78,
       "mass": 75,
       "gender": "male",
@@ -1464,6 +1464,9 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
@@ -1490,6 +1493,9 @@
       "born": -62,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
@@ -1513,6 +1519,11 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1545,6 +1556,12 @@
       "born": -54,
       "formerAffiliations": [
         "Trade Federation"
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Rebels",
+        "Solo: A Star Wars Story"
       ]
     },
     {
@@ -1566,11 +1583,16 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode I - The Phantom Menace",
+        "The Mandolorian"
       ]
     },
     {
       "id": 46,
-      "name": "Ayla Secura",
+      "name": "Aayla Secura",
       "height": 1.7,
       "mass": 55,
       "gender": "female",
@@ -1595,6 +1617,11 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1616,6 +1643,9 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
@@ -1635,6 +1665,9 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
@@ -1653,6 +1686,9 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
@@ -1672,6 +1708,9 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
