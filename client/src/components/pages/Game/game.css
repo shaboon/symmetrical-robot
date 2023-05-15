@@ -8,6 +8,10 @@
     border-radius: 50px;
 }
 
+.screen {
+    z-index: 2000;
+}
+
 /* Filler Text */
 .game-filler {
     text-align: center;
