@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import NavTabs from "./NavTabs";
-import Home from "./pages/Home";
-import Characters from "./pages/Characters";
-import Lists from "./pages/Lists";
-import Game from "./pages/Game";
+import NavTabs from "../NavTabs";
+import Footer from "../Footer/Footer";
+import Home from "../pages/Home/Home";
+import Characters from "../pages/Characters/Characters";
+import Lists from "../pages/Lists/Lists";
+import Game from "../pages/Game/Game";
+import GalaxyBackground from "../GalaxyBackground";
+import "./main.css";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -12,7 +15,6 @@ export default function PortfolioContainer() {
     document.title = "Interstellar Index";
   }, []);
 
-  // TODO: Add a comment describing the functionality of this method
   const renderPage = () => {
     if (currentPage === "Home") {
       return <Home />;
@@ -30,10 +32,9 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
-      {renderPage()}
+      <GalaxyBackground>{renderPage()}</GalaxyBackground>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer";
+import InterStellarContainer from "./components/InterStellarContainer/InterStellarContainer";
 
-const App = () => <PortfolioContainer />;
+const App = () => <InterStellarContainer />;
 
 export default App;
