@@ -6,7 +6,7 @@ export default function Home() {
     <div className="container mx-auto">
       <div className="row col-12 mx-auto rounded my-5 bg-secondary">
         <p className="row col-3 mx-auto rounded justify-content-center align-items-center my-3 fillers">
-          You Must Help Me Obi-Wan Kenobi
+          Help me Obi-Wan Kenobi, you're my only hope
         </p>
         <div className="row col-6 mx-auto rounded justify-content-center align-items-center my-3 scrolling-text">
           <div className="frame">
@@ -45,17 +45,21 @@ export default function Home() {
         </p>
       </div>
       <div className="row col-12 mx-auto my-5 bg-secondary">
-        <div className="row col-3 mx-5 rounded justify-content-center p-2 my-3">
-          Light
-          <div>More Content</div>
+        <div className="row col-12 col-xl-3 mx-5 rounded justify-content-center p-2 my-3 aff-title affiliation lightside">
+          <div className="aff-title">The Light Side</div>
+          <div className="subtext">The Jedi Council</div>
+          <div className="subtext">The Republic</div>
         </div>
-        <div className="row col-3 mx-5 rounded justify-content-center p-2 my-3">
-          Middle
-          <div>More Content</div>
+        <div className="row col-12 col-xl-3 mx-5 rounded justify-content-center p-2 my-3 aff-title affiliation midpeep">
+          <div className="aff-title">All Who Lie in the Middle</div>
+          <div className="subtext">Mandalorians</div>
+          <div className="subtext">Many Others</div>
         </div>
-        <div className="row col-3 mx-5 rounded justify-content-center p-2 my-3">
-          Dark
-          <div>More Content</div>
+        <div className="row col-12 col-xl-3 mx-5 rounded justify-content-center p-2 my-3 aff-title affiliation darkside">
+          <div className="aff-title">The Dark Side</div>
+          <div className="subtext">The Sith</div>
+          <div className="subtext">The CIS</div>
+          <div className="subtext">The Empire</div>
         </div>
       </div>
     </div>

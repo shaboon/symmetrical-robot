@@ -1,15 +1,14 @@
 /* Imports */
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Libre+Franklin&family=Press+Start+2P&display=swap');
 
 
 /* Fun Text Fillers */
 
 .fillers {
     text-align: center;
-    font-family: 'Libre Barcode 39', cursive;
-    font-size: 2em;
+    font-family: 'Libre Barcode 128', cursive;
+    font-size: 2.5em;
     color: #FFF;
 }
 
@@ -100,4 +99,38 @@
     100% {
         top: -170%;
    }
+}
+
+/* Affiliations */
+
+.aff-title {
+    text-align: center;
+    font-family: 'Libre Franklin', cursive;
+    font-size: 1.5em;
+}
+
+.affiliation {
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.2em;
+}
+
+.lightside {
+    background: rgba(177, 208, 255, 0.8);
+    color: #005A76;
+    box-shadow: -5px 8px 10px rgba(200, 242, 255, 0.25);
+    border-radius: 60px;
+}
+
+.midpeep {
+    background: rgba(217, 217, 217, 0.8);
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 60px;
+}
+
+.darkside {
+    background: rgba(129, 70, 70, 0.8);
+    color: #490000;
+    box-shadow: 5px 8px 10px rgba(255, 123, 123, 0.25);
+    border-radius: 60px;
 }

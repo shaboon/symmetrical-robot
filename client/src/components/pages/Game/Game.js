@@ -17,6 +17,7 @@ export default function About() {
           webkitallowfullscreen="true"
           mozallowfullscreen="true"
           scrolling="no"
+          title="Star Wars (Europe)"
         ></iframe>
       </div>
       <div className="col-2 row justify-content-center align-items-center game-filler">
