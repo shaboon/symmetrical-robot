@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Instellar Index - The Complete Guide For Canon Catch Up
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This application is designed to enable users to explore Star Wars characters featured in the vast Star Wars movie-verse. It allows users to discover which movies and series showcase a particular character. Once users find information about a specific character, they can save the corresponding works into a watchlist. This feature provides users with a comprehensive list that facilitates their immersion in the character's story and lore.
 
-In the project directory, you can run:
+Given the abundance of content emerging from the Star Wars universe in recent times, our goal was to develop a sleek and user-friendly app. Our app enables users to keep up with the current developments in the Star Wars universe at their own pace. By leveraging our application, users can easily locate their favorite familiar characters or explore new characters for which they seek additional information. By curating a personalized watchlist, users can access all the necessary background information and truly embrace the status of a Star Wars expert!
 
-### `npm start`
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+TBD
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+When the app is launched, users will be greeted by an engaging home page offering multiple options to explore. They can dive right in and start browsing Star Wars characters, or if they've had their fill of Star Wars content, they can unwind and enjoy our built-in game! However, before getting started, users need to log in to access all features, including the ability to create a personalized watchlist.
 
-### `npm test`
+Once logged in, users can explore the extensive library of Star Wars characters and begin crafting their own unique watchlist. Each character entry will include a list of appearances that users can add to their watchlist and assign a customized title to. For instance, users could create a watchlist named "Anakin" and compile all the movies and series where Anakin is mentioned or featured, thus becoming truly knowledgeable about our beloved Jedi 😈.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After creating their tailored watchlist, users will have access to additional information about each piece of media they have saved. They can delve into reviews, discover in-depth details, and view a poster for each title, enhancing their overall experience and understanding.
 
-### `npm run build`
+## Credits
+<br>Anthony Lieu - [GitHub Profile](https://github.com/anthonylieu)</br>
+<br>Sean Haboon - [GitHub Profile](https://github.com/shaboon)</br>
+<br>Sean Holian - [GitHub Profile](https://github.com/seannoway)</br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Badges
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+## Tests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
