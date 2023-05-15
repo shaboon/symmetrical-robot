@@ -1,13 +1,50 @@
 import React from "react";
+import Appearances from "./Appearances/Appearances";
 
 export default function Contact() {
+  const name = "Luke Skywalker";
+  const image = "https://starwars-visualguide.com/assets/img/characters/1.jpg";
+  const wiki = "https://starwars.fandom.com/wiki/Luke_Skywalker";
+  const born = "19 BBY";
+  const died = "34 ABY";
+  const species = "Human";
+  const affiliations = "Jedi Order, Rebel Alliance, New Republic";
+
   return (
     <div className="container justify-content-center my-5">
-      <div className="col-12 row bg-secondary">Wow</div>
-      <div className="col-12 row bg-secondary">
-        <div className="col-12 col-md-4">Wow</div>
-        <div className="col-12 col-md-4">Wow</div>
-        <div className="col-12 col-md-4">Wow</div>
+      <div className="col-12 row bg-light rounded">
+        <div className="col-12 col-md-4 row">
+          <img src={image} />
+        </div>
+        <div className="col-12 col-md-4 row">
+          <div>{name}</div>
+          <div>
+            {born} and {died}
+          </div>
+          <div>{species}</div>
+          <div>{affiliations}</div>
+          <div>{wiki}</div>
+        </div>
+        <div className="col-12 col-md-4 row">
+          <div className="col-12">Appearences</div>
+          <div className="col-12 col-xl-6">
+            <Appearances />
+          </div>
+          <div className="col-12 col-xl-6">
+            <Appearances />
+          </div>
+        </div>
+      </div>
+      <div className="col-12 row my-5 bg-secondary">
+        <div className="col-12 col-md-4 mx-auto row">
+          <button></button>
+        </div>
+        <div className="col-12 col-md-4 row">
+          <div className="bg-light rounded mx-1">Yes</div>
+        </div>
+        <div className="col-12 col-md-4 mx-auto row">
+          <button></button>
+        </div>
       </div>
     </div>
   );
