@@ -1,17 +1,28 @@
-import React from 'react';
+import React from "react";
+import "./game.css";
 
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+    <div className="container row col-12 mx-auto my-5 p-3 bg-secondary">
+      <div className="col-2 row justify-content-center align-items-center game-filler">
+        JOIN THE FIGHT
+      </div>
+      <div className="col-8 row justify-content-center mx-auto">
+        <iframe
+          src="https://www.retrogames.cc/embed/31371-star-wars-europe.html"
+          width="600"
+          height="450"
+          frameborder="no"
+          allowfullscreen="true"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          scrolling="no"
+          title="Star Wars (Europe)"
+        ></iframe>
+      </div>
+      <div className="col-2 row justify-content-center align-items-center game-filler">
+        BEAT THE EMPIRE WITH BETTER AIM
+      </div>
     </div>
   );
 }

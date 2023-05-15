@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Libre+Franklin&display=swap');
+
+
+/* Fun Text Fillers */
+
+.fillers {
+    text-align: center;
+    font-family: 'Libre Barcode 39', cursive;
+    font-size: 2em;
+    color: #FFF;
+}
+
+/* Sliding Text CSS */
+
 .frame {
     width: 500px;
     border-radius: 20px;
     height: 500px;
-    margin: 100px auto;
+    margin: auto;
     position: relative;
-    background: #000 url('http://jupiterjak.com/!img/stars.png') center/35%;
+    background: #000 center/35%;
+    box-shadow: 0px 10px 25px 15px rgba(255, 255, 255, 0.25);
 }
 .wrap {
     position: absolute;
