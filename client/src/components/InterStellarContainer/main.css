@@ -1,9 +1,5 @@
 body {
     width: auto;
     height: 2000px;
-    background-color: #000000 !important;
-}
-
-.background {
-    background-color: #000000 ;
+    background-color: black;
 }
