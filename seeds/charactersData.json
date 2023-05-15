@@ -885,17 +885,13 @@
         
       ],
       "appearances": [
+        "Star Wars: Episode IV - A New Hope",
         "Star Wars: Episode V - The Empire Strikes Back",
         "Star Wars: Episode VI - Return of the Jedi",
-        "Star Wars: Episode I - The Phantom Menace",
         "Star Wars: Episode II - Attack of the Clones",
-        "Star Wars: Episode III - Revenge of the Sith",
         "Star Wars: The Clone Wars",
-        "Star Wars: Rebels",
-        "Star Wars: Episode IX - The Rise of Skywalker",
-        "Star Wars: The Bad Batch",
-        "Obi-Wan Kenobi",
-        "Star Wars: Tales of the Jedi"
+        "The Mandalorian",
+        "The Book of Boba Fett"
       ]
     },
     {
@@ -942,6 +938,10 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Forces of Destiny"
       ]
     },
     {
@@ -965,6 +965,11 @@
       "born": -53,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -993,6 +998,13 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Rebels",
+        "Solo: A Star Wars Story",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -1018,6 +1030,9 @@
       "born": -37,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode V - The Empire Strikes Back"
       ]
     },
     {
@@ -1052,6 +1067,13 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -1079,6 +1101,14 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Rebels",
+        "Rogue One: A Star Wars Story",
+        "Andor"
       ]
     },
     {
@@ -1099,6 +1129,9 @@
       "hairColor": "brown",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VI - Return of the Jedi"
       ]
     },
     {
@@ -1121,6 +1154,9 @@
       "born": -8,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VI - Return of the Jedi"
       ]
     },
     {
