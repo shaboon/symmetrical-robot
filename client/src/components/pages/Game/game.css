@@ -1,0 +1,10 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Libre+Franklin&family=Press+Start+2P&display=swap');
+
+/* Filler Text */
+.game-filler {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    color: #fff;
+}
