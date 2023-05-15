@@ -496,7 +496,7 @@
         "Rogue One: A Star Wars Story",
         "Star Wars: Forces of Destiny",
         "Obi-Wan Kenobi",
-        "Star Wars: Tales of the Jedi"
+        "Tales of the Jedi"
       ]
     },
     {
@@ -1156,7 +1156,9 @@
         
       ],
       "appearances": [
-        "Star Wars: Episode VI - Return of the Jedi"
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Forces of Destiny",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -1181,6 +1183,12 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -1211,6 +1219,12 @@
       "born": -92,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: The Clone Wars",
+        "Obi-Wan Kenobi",
+        "Tales of the Jedi"
       ]
     },
     {
@@ -1234,6 +1248,12 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1256,6 +1276,10 @@
       "born": -91,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1287,6 +1311,14 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Forces of Destiny",
+        "Tales of the Jedi"
       ]
     },
     {
@@ -1312,6 +1344,12 @@
       "born": -52,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1333,6 +1371,10 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1351,6 +1393,10 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode III - Revenge of the Sith"
       ]
     },
     {
@@ -1372,6 +1418,9 @@
       "skinColor": "fair",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
@@ -1392,6 +1441,10 @@
       "hairColor": "black",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones"
       ]
     },
     {
