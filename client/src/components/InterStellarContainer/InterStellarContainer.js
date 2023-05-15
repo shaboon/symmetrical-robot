@@ -31,7 +31,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="background">
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       <GalaxyBackground>{renderPage()}</GalaxyBackground>
       <Footer />
