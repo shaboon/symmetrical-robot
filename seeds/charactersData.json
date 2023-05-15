@@ -48,10 +48,11 @@
         "Star Wars: Episode III - Revenge of the Sith",
         "Star Wars: Rebels",
         "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Forces of Destiny",
         "Star Wars: Episode VIII - The Last Jedi",
         "Star Wars: Episode IX - The Rise of Skywalker",
-        "Star Wars Forces of Destiny", 
         "The Mandalorian", 
+        "The Book of Boba Fett",
         "Obi-Wan Kenobi"
       ]
     },
@@ -110,7 +111,8 @@
         "Star Wars: Episode VII - The Force Awakens",
         "Rogue One: A Star Wars Story",
         "Star Wars: Episode VIII - The Last Jedi",
-        "Star Wars: Episode IX - The Rise of Skywalker"
+        "Star Wars: Episode IX - The Rise of Skywalker",
+        "Obi-Wan Kenobi"
       ]
     },
     {
@@ -176,7 +178,10 @@
         "Rogue One: A Star Wars Story",
         "Star Wars: Forces of Destiny",
         "Star Wars: Episode VIII - The Last Jedi",
-        "Star Wars: Episode IX - The Rise of Skywalker"
+        "Star Wars: Episode IX - The Rise of Skywalker",
+        "The Mandalorian",
+        "The Book of Boba Fett",
+        "Obi-Wan Kenobi"
       ]
     },
     {
@@ -221,16 +226,10 @@
         "Star Wars: Episode IV - A New Hope", 
         "Star Wars: Episode V - The Empire Strikes Back",
         "Star Wars: Episode VI - Return of the Jedi",
-        "Star Wars: Episode I - The Phantom Menace",
-        "Star Wars: Episode II - Attack of the Clones",
         "Star Wars: Episode III - Revenge of the Sith",
-        "Star Wars: The Clone Wars",
         "Star Wars: Rebels",
-        "Star Wars: Episode VII - The Force Awakens",
         "Rogue One: A Star Wars Story",
-        "Star Wars: Forces of Destiny",
-        "Obi-Wan Kenobi",
-        "Star Wars: Tales of the Jedi"
+        "Obi-Wan Kenobi"
       ]
     },
     {
@@ -303,12 +302,17 @@
       "born": -52,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Obi-Wan Kenobi"
       ]
-    
     },
     {
       "id": 7,
-      "name": "Beru Whitesun lars",
+      "name": "Beru Whitesun Lars",
       "height": 1.65,
       "mass": 75,
       "gender": "female",
@@ -327,6 +331,12 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Obi-Wan Kenobi"
       ]
     },
     {
@@ -351,6 +361,12 @@
       "eyeColor": "red",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode II - Attack of the Clones",
+        "The Mandalorian",
+        "The Book of Boba Fett"
       ]
     },
     {
@@ -378,6 +394,9 @@
       "born": -24,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope"
       ]
     },
     {
@@ -413,6 +432,17 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Rebels",
+        "Obi-Wan Kenobi"
       ]
     },
     {
@@ -500,6 +530,14 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Rebels",
+        "Rogue One: A Star Wars Story",
+        "Star Wars: The Bad Batch"
       ]
     },
     {
@@ -528,6 +566,17 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Solo: A Star Wars Story",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -562,6 +611,14 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Solo: A Star Wars Story",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -587,6 +644,10 @@
       "born": -44,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: The Clone Wars"
       ]
     },
     {
