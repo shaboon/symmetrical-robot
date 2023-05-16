@@ -2881,20 +2881,27 @@
       "image": "https://static.wikia.nocookie.net/starwars/images/1/12/AhsokaTano-AG.png/",
       "born": "36 bby, shili",
       "species": "yoda's species",
-      "hairColor": "white",
-      "eyeColor": "brown",
-      "skinColor": "green",
+      "eyeColor": "blue",
+      "skinColor": "orange (with white markings and blue stripes)",
       "affiliations": [
         "Jedi Order",
-        "Mandalorians",
-        "Ancient Order of Independent Regencies"
+        "Galactic Republic",
+        "Bail Organa's resistance movement",
+        "Phoenix Cell"
+      ],
+      "masters": [
+        "Anakin Skywalker"
       ],
       "formerAffiliations": [
         
       ],
       "appearances": [
+        "Star Wars: The Clone Wars",
+        "Star Wars: Rebels",
+        "Star Wars: Forces of Destiny",
         "The Mandalorian",
-        "The Book of Boba Fett"
+        "The Book of Boba Fett",
+        "Tales of the Jedi"
       ]
     }
   ]
