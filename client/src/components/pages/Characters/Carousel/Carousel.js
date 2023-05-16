@@ -19,14 +19,19 @@ const Carousel = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
-      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+    <section className="container slider">
+      <FaArrowAltCircleLeft
+        className="col-6 col-md-2 row left-arrow"
+        onClick={prevSlide}
+      />
+      <FaArrowAltCircleRight
+        className="col-6 col-md-2 row right-arrow"
+        onClick={nextSlide}
+      />
       {SliderData.map((slide, index) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
-            container
             key={index}
           >
             {index === current && <h1 className="Name"> {slide.name} </h1>}

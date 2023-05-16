@@ -17,9 +17,9 @@ export default function Contact() {
     <div className="container justify-content-center my-5">
       <div className="col-12 row bg-light rounded">
         <div className="col-12 col-md-4 row">
-          <img src={image} />
+          <img src={image} className="col-8 mx-auto my-auto upper-image" />
         </div>
-        <div className="col-12 col-md-4 row">
+        <div className="col-12 col-md-4 my-auto row">
           <div>{name}</div>
           <div>
             {born} and {died}
@@ -34,6 +34,7 @@ export default function Contact() {
             <Appearances />
           </div>
           <div className="col-12 col-xl-6">
+            {/* Turn Line Below to Drop Down For WatchLists */}
             <Appearances />
           </div>
         </div>
