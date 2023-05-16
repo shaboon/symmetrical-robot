@@ -22,31 +22,31 @@ const Carousel = ({ slides }) => {
   return (
     <section className="container slider">
       <FaArrowAltCircleLeft
-        className="col-6 col-md-2 row left-arrow"
+        className="col-6 col-md-2 row left-arrow arrow"
         onClick={prevSlide}
       />
       <FaArrowAltCircleRight
-        className="col-6 col-md-2 row right-arrow"
+        className="col-6 col-md-2 row right-arrow arrow"
         onClick={nextSlide}
       />
       {SliderData.map((slide, index) => {
         return (
-          <div
-            className={
-              index === current
-                ? "slide active mx-auto justify-content-center"
-                : "slide"
-            }
-            key={index}
-          >
-            {index === current && <h1 className="name"> {slide.name} </h1>}
-            {index === current && (
-              <img
-                src={slide.image}
-                alt="star wars character image"
-                className="image"
-              />
-            )}
+          <div className="d-flex justify-content-center">
+            <div
+              className={index === current ? "slide active mx-auto" : "slide"}
+              key={index}
+            >
+              <div>{index === current && <h1> {slide.name} </h1>}</div>
+              {index === current && (
+                <div className="d-flex justify-content-center">
+                  <img
+                    src={slide.image}
+                    alt="star wars character image"
+                    className="image"
+                  />
+                </div>
+              )}
+            </div>
           </div>
         );
       })}
