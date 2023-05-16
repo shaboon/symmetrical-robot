@@ -2819,5 +2819,32 @@
         "Star Wars: Episode VII - The Force Awakens",
         "Star Wars: Episode VIII - The Last Jedi"
       ]
+    },
+    {
+      "id": 89,
+      "name": "The Mandalorian",
+      "height": 1.8,
+      "gender": "male",
+      "homeworld": "Aq Vetina",
+      "wiki": "https://starwars.fandom.com/wiki/Din_Djarin",
+      "image": "https://en.wikipedia.org/wiki/The_Mandalorian_%28character%29#/media/File:TheMandalorian.jpg",
+      "species": "human",
+      "hairColor": "dark brown",
+      "eyeColor": "brown",
+      "skinColor": "tan",
+      "affiliations": [
+        "Mandalorians",
+        "Gideon's Imperial remnant",
+        "Bounty Hunters' Guild",
+        "Fett gotra",
+        "New Republic"
+      ],
+      "formerAffiliations": [
+        
+      ],
+      "appearances": [
+        "The Mandalorian",
+        "The Book of Boba Fett"
+      ]
     }
   ]
