@@ -2903,5 +2903,57 @@
         "The Book of Boba Fett",
         "Tales of the Jedi"
       ]
-    }
+    },
+    {
+      "id": 92,
+      "name": "Rex",
+      "height": 1.83,
+      "gender": "male",
+      "homeworld": "kamino",
+      "wiki": "https://starwars.fandom.com/wiki/Rex",
+      "image": "https://static.wikia.nocookie.net/starwars/images/8/89/Captain_Rex_old.png",
+      "born": -32,
+      "species": "human (clone)",
+      "hairColor": "blond",
+      "eyeColor": "brown",
+      "skinColor": "tan",
+      "affiliations": [
+        "Alliance to Restore the Republic",
+        "Red Squadron",
+        "Rogue Squadron",
+        "Massassi Group",
+        "Leia Organa's team",
+        "Endor strike team",
+        "Jedi Order",
+        "Bright Tree tribe",
+        "New Republic",
+        "Resistance"
+      ],
+      "masters": [
+        "Obi-Wan Kenobi",
+        "Yoda"
+      ],
+      "apprentices": [
+        "Leia Organa",
+        "Ben Solo (along with a dozen apprentices)",
+        "Rey"
+      ],
+      "formerAffiliations": [
+        
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope", 
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: Rebels",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Forces of Destiny",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Episode IX - The Rise of Skywalker",
+        "The Mandalorian", 
+        "The Book of Boba Fett",
+        "Obi-Wan Kenobi"
+      ]
+    },
   ]
