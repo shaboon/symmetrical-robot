@@ -1,4 +1,11 @@
 import React, { useState, useEffect } from "react";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavTabs from "../components/NavTabs";
@@ -6,29 +13,43 @@ import Footer from "../components/Footer/Footer";
 import Home from "../pages/Home/Home";
 import Characters from "../pages/Characters/Characters";
 import Lists from "../pages/Lists/Lists";
+
+import Standby from "../components/Token/Standby";
+import Login from "../components/Token/Login";
+import SignUp from "../components/Token/SignUp";
+import Profile from "../components/Token/Profile";
+
 import Game from "../pages/Game/Game";
 import GalaxyBackground from "../components/GalaxyBackground";
 import "./main.css";
 
 export default function InterStellarContainer() {
+  const httpLink = createHttpLink({
+    uri: "/graphql",
+  });
+
+  const authLink = setContext((_, { headers }) => {
+    // get the authentication token from local storage if it exists
+    const token = localStorage.getItem("id_token");
+    // return the headers to the context so httpLink can read them
+    return {
+      headers: {
+        ...headers,
+        authorization: token ? `Bearer ${token}` : "",
+      },
+    };
+  });
+
+  const client = new ApolloClient({
+    link: authLink.concat(httpLink),
+    cache: new InMemoryCache(),
+  });
+
   const [currentPage, setCurrentPage] = useState("Home");
 
   useEffect(() => {
     document.title = "Interstellar Index";
   }, []);
-
-  const renderPage = () => {
-    if (currentPage === "Home") {
-      return window.location.replace("/");
-    }
-    if (currentPage === "Characters") {
-      return window.location.replace("/Characters");
-    }
-    if (currentPage === "Lists") {
-      return window.location.replace("/Lists");
-    }
-    return window.location.replace("/Game");
-  };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
@@ -36,14 +57,21 @@ export default function InterStellarContainer() {
     <div className="background">
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       <GalaxyBackground>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Characters" element={<Characters />} />
-            <Route path="/Lists" element={<Lists />} />
-            <Route path="/Game" element={<Game />} />
-          </Routes>
-        </Router>
+        <ApolloProvider client={client}>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Characters" element={<Characters />} />
+              <Route path="/Lists" element={<Lists />} />
+              <Route path="/" element={<Standby />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/me" element={<Profile />} />
+              <Route path="/profiles/:profileId" element={<Profile />} />
+              <Route path="/Game" element={<Game />} />
+            </Routes>
+          </Router>
+        </ApolloProvider>
       </GalaxyBackground>
 
       <Footer />
