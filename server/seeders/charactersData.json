@@ -2613,6 +2613,10 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode IV - A New Hope",
+        "Star Wars: Episode III - Revenge of the Sith"
       ]
     },
     {
@@ -2634,6 +2638,10 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith"
       ]
     },
     {
@@ -2653,6 +2661,9 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode III - Revenge of the Sith"
       ]
     },
     {
@@ -2675,6 +2686,12 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Forces of Destiny",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -2698,6 +2715,12 @@
       "masters": "Luke Skywalker",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Forces of Destiny",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -2726,11 +2749,17 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Resistance",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
       "id": 87,
-      "name": "BB8",
+      "name": "BB-8",
       "height": 0.67,
       "mass": 18,
       "gender": "male",
@@ -2756,6 +2785,12 @@
       "eyeColor": "black",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Forces of Destiny",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Episode IX - The Rise of Skywalker"
       ]
     },
     {
@@ -2779,6 +2814,10 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Episode VIII - The Last Jedi"
       ]
     },
     {

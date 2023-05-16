@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { SliderData } from "./CharacterData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import "../Characters.css";
 
 const Carousel = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -19,24 +20,33 @@ const Carousel = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
-      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+    <section className="container slider">
+      <FaArrowAltCircleLeft
+        className="col-6 col-md-2 row left-arrow arrow"
+        onClick={prevSlide}
+      />
+      <FaArrowAltCircleRight
+        className="col-6 col-md-2 row right-arrow arrow"
+        onClick={nextSlide}
+      />
       {SliderData.map((slide, index) => {
         return (
-          <div
-            className={index === current ? "slide active" : "slide"}
-            container
-            key={index}
-          >
-            {index === current && <h1 className="Name"> {slide.name} </h1>}
-            {index === current && (
-              <img
-                src={slide.image}
-                alt="travel image"
-                className="col-12 row image"
-              />
-            )}
+          <div className="d-flex justify-content-center">
+            <div
+              className={index === current ? "slide active mx-auto" : "slide"}
+              key={index}
+            >
+              <div>{index === current && <h1> {slide.name} </h1>}</div>
+              {index === current && (
+                <div className="d-flex justify-content-center">
+                  <img
+                    src={slide.image}
+                    alt="star wars character image"
+                    className="image"
+                  />
+                </div>
+              )}
+            </div>
           </div>
         );
       })}
