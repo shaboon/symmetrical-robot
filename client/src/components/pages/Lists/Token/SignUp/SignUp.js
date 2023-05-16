@@ -15,24 +15,24 @@ const Signup = () => {
 
   // update state based on form input changes
   const handleChange = (event) => {
-    const { username, value } = event.target;
+    const { name, value } = event.target;
 
     setFormState({
       ...formState,
-      [username]: value,
+      [name]: value,
     });
   };
 
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
+   
 
     try {
-      const { data } = await addProfile({
-        variables: { ...formState },
+      const data = await addProfile({
+        variables: { username: formState.username, password: formState.password },
       });
-
+      console.log(formState);
       Auth.login(data.addProfile.token);
     } catch (e) {
       console.error(e);
@@ -57,7 +57,7 @@ const Signup = () => {
                   placeholder="Your username"
                   name="name"
                   type="text"
-                  value={formState.name}
+                  // value={formState.name}
                   onChange={handleChange}
                 />
                 <input
@@ -65,7 +65,7 @@ const Signup = () => {
                   placeholder="******"
                   name="password"
                   type="password"
-                  value={formState.password}
+                  // value={formState.password}
                   onChange={handleChange}
                 />
                 <button
