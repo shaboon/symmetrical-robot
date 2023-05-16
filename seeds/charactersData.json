@@ -858,7 +858,7 @@
         "Star Wars: Episode IX - The Rise of Skywalker",
         "Star Wars: The Bad Batch",
         "Obi-Wan Kenobi",
-        "Star Wars: Tales of the Jedi"
+        "Tales of the Jedi"
       ]
     },
     {
@@ -1741,6 +1741,12 @@
       "apprentices": "Depa Billaba",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: The Clone Wars",
+        "Tales of the Jedi"
       ]
     },
     {
@@ -1768,6 +1774,13 @@
       "born": -92,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Tales of the Jedi"
       ]
     },
     {
@@ -1794,6 +1807,11 @@
       "apprentices": "Nahdar Vebb",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1816,6 +1834,11 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1841,6 +1864,11 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1865,6 +1893,12 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1886,6 +1920,9 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace"
       ]
     },
     {
@@ -1912,6 +1949,12 @@
       "born": -22,
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
@@ -1936,6 +1979,13 @@
       ],
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars",
+        "Star Wars: The Bad Batch"
       ]
     },
     {
@@ -1958,6 +2008,11 @@
       "skinColor": "dark",
       "formerAffiliations": [
         
+      ],
+      "appearances": [
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: The Clone Wars"
       ]
     },
     {
