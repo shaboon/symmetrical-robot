@@ -2828,8 +2828,8 @@
       "homeworld": "Aq Vetina",
       "wiki": "https://starwars.fandom.com/wiki/Din_Djarin",
       "image": "https://en.wikipedia.org/wiki/The_Mandalorian_%28character%29#/media/File:TheMandalorian.jpg",
-      "species": "human",
-      "hairColor": "dark brown",
+      "species": "yoda's species",
+      "hairColor": "white",
       "eyeColor": "brown",
       "skinColor": "tan",
       "affiliations": [
@@ -2838,6 +2838,30 @@
         "Bounty Hunters' Guild",
         "Fett gotra",
         "New Republic"
+      ],
+      "formerAffiliations": [
+        
+      ],
+      "appearances": [
+        "The Mandalorian",
+        "The Book of Boba Fett"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "The Child",
+      "height": 0.34,
+      "gender": "male",
+      "wiki": "https://starwars.fandom.com/wiki/Din_Grogu",
+      "image": "https://static.wikia.nocookie.net/starwars/images/4/43/TheChild-Fathead.png",
+      "species": "yoda's species",
+      "hairColor": "white",
+      "eyeColor": "brown",
+      "skinColor": "green",
+      "affiliations": [
+        "Jedi Order",
+        "Mandalorians",
+        "Ancient Order of Independent Regencies"
       ],
       "formerAffiliations": [
         
