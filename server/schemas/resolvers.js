@@ -29,6 +29,7 @@ const resolvers = {
       return { token, profile };
     },
     login: async (parent, { username, password }) => {
+      console.log("HIT ME BABY ONE MORE TIME")
       const profile = await Profile.findOne({ username });
 
       if (!profile) {
