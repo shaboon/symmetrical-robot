@@ -11,11 +11,11 @@ const Login = (props) => {
 
   // update state based on form input changes
   const handleChange = (event) => {
-    const { username, value } = event.target;
+    const { name, value } = event.target;
 
     setFormState({
       ...formState,
-      [username]: value,
+      [name]: value,
     });
   };
 
@@ -59,6 +59,7 @@ const Login = (props) => {
                   name="username"
                   type="text"
                   onChange={handleChange} 
+                  value={formState.username}
                 />
                 <input
                   className="form-input"
@@ -66,6 +67,7 @@ const Login = (props) => {
                   name="password"
                   type="password"
                   onChange={handleChange} 
+                  value={formState.password}
                 />
                 <button
                   className="btn btn-block btn-info"

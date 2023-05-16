@@ -8,7 +8,7 @@ import Game from "../pages/Game/Game";
 import GalaxyBackground from "../GalaxyBackground";
 import "./main.css";
 
-export default function PortfolioContainer() {
+export default function InterStellarContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
 
   useEffect(() => {
