@@ -1,5 +1,7 @@
 import React from "react";
 import Appearances from "./Appearances/Appearances";
+import Carousel from "./Carousel/Carousel";
+import { SliderData } from "./Carousel/CharacterData";
 
 export default function Contact() {
   const name = "Luke Skywalker";
@@ -36,15 +38,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="col-12 row my-5 bg-secondary">
-        <div className="col-12 col-md-4 mx-auto row">
-          <button></button>
-        </div>
-        <div className="col-12 col-md-4 row">
-          <div className="bg-light rounded mx-1">Yes</div>
-        </div>
-        <div className="col-12 col-md-4 mx-auto row">
-          <button></button>
-        </div>
+        <Carousel slides={SliderData} />
       </div>
     </div>
   );
