@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
-import { LOGIN_USER } from "../../../../utils/mutations";
+import { LOGIN_USER } from "../utils/mutations";
 
-import Auth from "../../../../utils/auth";
+import Auth from "../utils/auth";
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ username: "", password: "" });
@@ -58,14 +58,14 @@ const Login = (props) => {
                   placeholder="Your username"
                   name="username"
                   type="text"
-                  onChange={handleChange} 
+                  onChange={handleChange}
                 />
                 <input
                   className="form-input"
                   placeholder="******"
                   name="password"
                   type="password"
-                  onChange={handleChange} 
+                  onChange={handleChange}
                 />
                 <button
                   className="btn btn-block btn-info"
