@@ -2,6 +2,7 @@ import React from "react";
 import Appearances from "./Appearances/Appearances";
 import Carousel from "./Carousel/Carousel";
 import { SliderData } from "./Carousel/CharacterData";
+import "./Characters.css";
 
 export default function Contact() {
   const name = "Luke Skywalker";
@@ -37,7 +38,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="col-12 row my-5 bg-secondary">
+      <div className="col-6 row mx-auto my-5 bg-secondary rounded">
         <Carousel slides={SliderData} />
       </div>
     </div>

@@ -26,10 +26,16 @@ const Carousel = ({ slides }) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
+            container
             key={index}
           >
+            {index === current && <h1 className="Name"> {slide.name} </h1>}
             {index === current && (
-              <img src={slide.image} alt="travel image" className="image" />
+              <img
+                src={slide.image}
+                alt="travel image"
+                className="col-12 row image"
+              />
             )}
           </div>
         );
