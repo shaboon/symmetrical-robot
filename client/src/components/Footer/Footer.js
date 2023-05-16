@@ -5,21 +5,7 @@ export default function Footer() {
   return (
     <div>
       <footer className="foot">
-        <section className="login-container">
-          <form>
-            <input
-              className="name-input info"
-              type="text"
-              placeholder="Username"
-            ></input>
-            <input
-              className="pass-input info"
-              type="password"
-              placeholder="Password"
-            ></input>
-            <button className="submit info">I/O</button>
-          </form>
-        </section>
+        <div className="container text-light col-12 mx-auto"> Group #4</div>
       </footer>
     </div>
   );
