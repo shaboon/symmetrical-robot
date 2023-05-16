@@ -2848,7 +2848,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": 90,
       "name": "The Child",
       "height": 0.34,
       "gender": "male",
@@ -2870,5 +2870,31 @@
         "The Mandalorian",
         "The Book of Boba Fett"
       ]
-    }
+    },
+    {
+      "id": 91,
+      "name": "Ahsoka Tano",
+      "height": 1.76,
+      "gender": "female",
+      "homeworld": "shili",
+      "wiki": "https://starwars.fandom.com/wiki/Ahsoka_Tano",
+      "image": "https://static.wikia.nocookie.net/starwars/images/1/12/AhsokaTano-AG.png/",
+      "born": "36 bby, shili",
+      "species": "yoda's species",
+      "hairColor": "white",
+      "eyeColor": "brown",
+      "skinColor": "green",
+      "affiliations": [
+        "Jedi Order",
+        "Mandalorians",
+        "Ancient Order of Independent Regencies"
+      ],
+      "formerAffiliations": [
+        
+      ],
+      "appearances": [
+        "The Mandalorian",
+        "The Book of Boba Fett"
+      ]
+    },
   ]
