@@ -1,5 +1,5 @@
 import React from "react";
-import InterStellarContainer from "./components/InterStellarContainer/InterStellarContainer";
+import InterStellarContainer from "./InterStellarContainer/InterStellarContainer";
 
 const App = () => <InterStellarContainer />;
 
