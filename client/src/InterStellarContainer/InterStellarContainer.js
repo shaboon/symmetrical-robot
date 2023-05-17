@@ -13,6 +13,7 @@ import Footer from "../components/Footer/Footer";
 import Home from "../pages/Home/Home";
 import Characters from "../pages/Characters/Characters";
 import Lists from "../pages/Lists/Lists";
+import WatchLists from "../components/Token/WatchLists";
 
 import Standby from "../components/Token/Standby";
 import Login from "../components/Token/Login";
@@ -67,6 +68,7 @@ export default function InterStellarContainer() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/profiles/:profileId" element={<Profile />} />
+              <Route path="/Watch" element={<WatchLists />} />
               <Route path="/Game" element={<Game />} />
             </Routes>
           </Router>
