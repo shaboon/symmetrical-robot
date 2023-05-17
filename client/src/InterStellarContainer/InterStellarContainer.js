@@ -66,7 +66,6 @@ export default function InterStellarContainer() {
               <Route path="/" element={<Standby />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
-              <Route path="/me" element={<Profile />} />
               <Route path="/profiles/:profileId" element={<Profile />} />
               <Route path="/Game" element={<Game />} />
             </Routes>

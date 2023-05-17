@@ -23,10 +23,16 @@ const Profile = () => {
 
   // Check if data is returning from the `QUERY_ME` query, then the `QUERY_SINGLE_PROFILE` query
   const profile = data?.me || data?.profile || {};
+  console.log(profile);
+  console.log(profile._id);
+  // console.log(Auth.getProfile().data._id);
+  console.log(Auth.loggedIn());
+  console.log(profileId);
+  console.log(profile.username);
 
   // Use React Router's `<Redirect />` component to redirect to personal profile page if username is yours
-  if (Auth.loggedIn() && Auth.getProfile().data._id === profileId) {
-    return <Navigate to="/me" />;
+  if (profile._id === profileId) {
+    return <Navigate to="/profiles/:profileId" />;
   }
 
   if (loading) {
@@ -45,12 +51,15 @@ const Profile = () => {
   return (
     <div>
       <h2 className="card-header">
-        {profileId ? `${profile.name}'s` : "Your"} friends have endorsed these
-        skills...
+        {profileId ? `${profile.username}'s` : "Your"} friends have endorsed
+        these skills...
       </h2>
 
-      {profile.skills?.length > 0 && (
-        <WatchLists name={profile.skills} isLoggedInUser={!profileId && true} />
+      {profile.watchLists?.length > 0 && (
+        <WatchLists
+          name={profile.watchLists}
+          isLoggedInUser={!profileId && true}
+        />
       )}
       {/* 
       <div className="my-4 p-4" style={{ border: "1px dotted #1a1a1a" }}>
