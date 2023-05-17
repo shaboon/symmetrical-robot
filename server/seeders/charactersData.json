@@ -3128,39 +3128,53 @@
           "sensorColor": "red",
           "platingColor": "gray and bronze",
           "affiliations": [
-            "Skywalker family",
-            "Confederacy of Independent Systems",
-            "Royal House of Naboo",
-            "Galactic Republic",
-            "House of Organa",
-            "Galactic Empire",
-            "Alliance to Restore the Republic",
-            "Massassi Group",
-            "Leia Organa's team",
-            "Pathfinders",
-            "Endor strike team",
-            "Bright Tree tribe",
-            "New Republic",
-            "Resistance",
-            "Resistance spy droid network"
+            "Bounty Hunters' Guild",
+            "New Republic"
           ],
           "formerAffiliations": [
             
           ],
           "appearances": [
-            "Star Wars: Episode IV - A New Hope", 
-            "Star Wars: Episode V - The Empire Strikes Back",
-            "Star Wars: Episode VI - Return of the Jedi",
-            "Star Wars: Episode I - The Phantom Menace",
-            "Star Wars: Episode II - Attack of the Clones",
-            "Star Wars: Episode III - Revenge of the Sith",
-            "Star Wars: The Clone Wars",
-            "Star Wars: Rebels",
-            "Star Wars: Episode VII - The Force Awakens",
-            "Rogue One: A Star Wars Story",
-            "Star Wars: Episode VIII - The Last Jedi",
-            "Star Wars: Episode IX - The Rise of Skywalker",
-            "Obi-Wan Kenobi"
+            "The Mandalorian"
           ]
         },
+        {
+          "id": 100,
+          "name": "Saw Gerrera",
+          "height": 1.8,
+          "gender": "male",
+          "homeworld": "onderon",
+          "wiki": "https://starwars.fandom.com/wiki/Saw_Gerrera",
+          "image": "https://static.wikia.nocookie.net/starwars/images/f/fe/Saw_Gerrera_Rogue_One.png",
+          "born": -19,
+          "died": 0,
+          "diedLocation": "jedha",
+          "species": "human",
+          "hairColor": "black, with orange stripe; later graying, no orange stripe",
+          "eyeColor": "blue, later green, later brown",
+          "skinColor": "dark",
+          "cybernetics": "Cybernetic right arm, oxygen respirator, pressurized suit of armor, reinforced lungs",
+          "affiliations": [
+            "Onderon rebels",
+            "Galactic Republic",
+            "Royal Court of Onderon",
+            "Royal Onderon Miltia",
+            "Partisans",
+            "Alliance to Restore the Republic"
+          ],
+          "apprentices": [
+            "Jyn Erso",
+            "Reece Tallent"
+          ],
+          "formerAffiliations": [
+            
+          ],
+          "appearances": [
+            "Star Wars: The Clone Wars",
+            "Star Wars: Rebels",
+            "Rogue One: A Star Wars Story",
+            "Star Wars: The Bad Batch",
+            "Andor"
+          ]
+        }
   ]
