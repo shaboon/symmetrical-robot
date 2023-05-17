@@ -5,17 +5,18 @@ const characterSeeds = require('./charactersData.json');
 
 db.once('open', async () => {
   try {
-    // await Profile.deleteMany({});
-    await Profile.create(profileSeeds);
+    // Delete all existing documents in the Profile collection and insert new ones
+    await Profile.deleteMany({});
+    await Profile.insertMany(profileSeeds);
 
-    // Log Character to see what it is.
-    console.log(Character);
+    // Delete all existing documents in the Character collection and insert new ones
     await Character.deleteMany({});
-    await Character.create(characterSeeds);
+    await Character.insertMany(characterSeeds);
 
-    console.log('all done!');
+    console.log('All done!');
     process.exit(0);
   } catch (err) {
-    throw err;
+    console.error(err);
+    process.exit(1);
   }
 });
