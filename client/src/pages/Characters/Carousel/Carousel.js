@@ -30,8 +30,11 @@ const Carousel = ({ slides }) => {
         onClick={nextSlide}
       />
       {SliderData.map((slide, index) => {
+        const handleClick = () => {
+          localStorage.setItem("info", JSON.stringify(slide));
+        };
         return (
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center" onClick={handleClick}>
             <div
               className={index === current ? "slide active mx-auto" : "slide"}
               key={index}

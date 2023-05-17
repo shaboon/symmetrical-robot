@@ -3,7 +3,7 @@ import React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
-import WatchLists from "./WatchLists";
+import WatchLists from "./Profile/WatchLists/WatchLists";
 // import SkillForm from "../components/SkillForm";
 
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from "../utils/queries";
