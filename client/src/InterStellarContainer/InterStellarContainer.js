@@ -68,6 +68,7 @@ export default function InterStellarContainer() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/profiles/:profileId" element={<Profile />} />
+              {/* remove Once Login is functional */}
               <Route path="/Watch" element={<WatchLists />} />
               <Route path="/Game" element={<Game />} />
             </Routes>
