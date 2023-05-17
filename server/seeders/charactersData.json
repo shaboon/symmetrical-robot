@@ -3088,4 +3088,29 @@
             "The Mandalorian"
           ]
         },
+        {
+          "id": 98,
+          "name": "Fennec Shand",
+          "height": 1.63,
+          "gender": "female",
+          "wiki": "https://starwars.fandom.com/wiki/Fennec_Shand",
+          "image": "https://static.wikia.nocookie.net/starwars/images/b/b4/FennecShandHS-TMCh15.png",
+          "species": "human",
+          "hairColor": "black",
+          "eyeColor": "brown",
+          "skinColor": "tan",
+          "cybernetics": "Abdomen",
+          "affiliations": [
+            "Hutt Clan",
+            "Fett gotra"
+          ],
+          "formerAffiliations": [
+            
+          ],
+          "appearances": [
+            "The Mandalorian", 
+            "The Bad Batch",
+            "The Book of Boba Fett"
+          ]
+        },
   ]
