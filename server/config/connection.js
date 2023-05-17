@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/my_database', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/interstellar-index', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
