@@ -5,10 +5,10 @@ const CharacterSchema = new mongoose.Schema({
         type: String,
     },
     height: {
-        type: Integer,
+        type: Number,
     },
     mass: {
-        type: Integer,
+        type: Number,
     },
     gender: {
         type: String,
@@ -26,10 +26,10 @@ const CharacterSchema = new mongoose.Schema({
         type: String,
     },
     dateCreated: {
-        type: Integer,
+        type: Number,
     },
     dateDestroyed: {
-        type: Integer,
+        type: Number,
     },
     destroyedLocation: {
         type: String,
@@ -53,13 +53,13 @@ const CharacterSchema = new mongoose.Schema({
         type: String,
     },
     born: {
-        type: Integer,
+        type: Number,
     },
     bornLocation: {
         type: String,
     },
     died: {
-        type: Integer,
+        type: Number,
     },
     diedLocation: {
         type: String,
