@@ -5,7 +5,7 @@ const characterSeeds = require('./charactersData.json');
 
 db.once('open', async () => {
   try {
-    await Profile.deleteMany({});
+    // await Profile.deleteMany({});
     await Profile.create(profileSeeds);
 
     await Character.deleteMany({});

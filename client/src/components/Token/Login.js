@@ -24,11 +24,11 @@ const Login = (props) => {
     event.preventDefault();
     console.log(formState);
     try {
-      const data  = await login({
+      const result  = await login({
         variables: { ...formState },
       });
 
-      Auth.login(data.login.token);
+      Auth.login(result.data.login.token);
     } catch (e) {
       console.error(e);
     }

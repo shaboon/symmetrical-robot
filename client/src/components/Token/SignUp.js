@@ -28,14 +28,14 @@ const Signup = () => {
     event.preventDefault();
 
     try {
-      const data = await addProfile({
+      const result = await addProfile({
         variables: {
           username: formState.username,
           password: formState.password,
         },
       });
       console.log(formState);
-      Auth.login(data.addProfile.token);
+      Auth.login(result.data.addProfile.token);
     } catch (e) {
       console.error(e);
     }
@@ -57,7 +57,7 @@ const Signup = () => {
                 <input
                   className="form-input"
                   placeholder="Your username"
-                  name="name"
+                  name="username"
                   type="text"
                   // value={formState.name}
                   onChange={handleChange}
