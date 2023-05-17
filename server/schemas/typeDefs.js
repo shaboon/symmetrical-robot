@@ -1,6 +1,7 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
+
   type Profile {
     _id: ID
     username: String
@@ -11,6 +12,23 @@ const typeDefs = gql`
     token: ID!
     profile: Profile
   }
+
+# type watchList {
+#     _id: ID
+#     title: String
+#     description: String
+#     image: String
+#     link: String
+#     rating: String
+#     genre: String
+#     year: String
+#     director: String
+#     actors: String
+#     runtime: String
+#     imdbID: String
+#     type: String
+#     user: String
+#   }
 
   type Query {
     profiles: [Profile]!
@@ -23,6 +41,40 @@ const typeDefs = gql`
     addProfile(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
   }
+
+  # type Mutation {
+  #   addWatchList(title: String!,
+  #    description: String!,
+  #     image: String!,
+  #      link: String!,
+  #      rating: String!,
+  #       genre: String!,
+  #       year: String!,
+  #        director: String!,
+  #         actors: String!,
+  #          runtime: String!,
+  #           imdbID: String!,
+  #            type: String!,
+  #             user: String!):
+  #              watchList
+  #   removeWatchList(watchListId: ID!): watchList
+  #   updateWatchList(watchListId: ID!,
+  #    title: String!,
+  #     description: String!,
+  #      image: String!,
+  #       link: String!,
+  #        rating: String!,
+  #         genre: String!,
+  #          year: String!,
+  #           director: String!,
+  #            actors: String!,
+  #             runtime: String!,
+  #              imdbID: String!,
+  #               type: String!,
+  #                user: String!):
+  #                 watchList
+  # }
+
 `;
 
 module.exports = typeDefs;
