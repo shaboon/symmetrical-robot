@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 
-import WatchLists from "./Profile/WatchLists/WatchLists";
+import WatchLists from "./WatchLists";
 
 import { QUERY_PROFILES } from "../utils/queries";
 
