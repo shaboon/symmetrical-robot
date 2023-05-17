@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const CharacterSchema = new mongoose.Schema({
-  name: {
+name: {
     type: String,
   },
   height: {
@@ -95,6 +95,7 @@ const CharacterSchema = new mongoose.Schema({
     type: Array,
   },
 });
+
 
 const Character = mongoose.model("Character", CharacterSchema);
 module.exports = Character;
