@@ -8,6 +8,8 @@ db.once('open', async () => {
     // await Profile.deleteMany({});
     await Profile.create(profileSeeds);
 
+    // Log Character to see what it is.
+    console.log(Character);
     await Character.deleteMany({});
     await Character.create(characterSeeds);
 
