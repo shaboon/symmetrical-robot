@@ -1,17 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Appearances from "./Appearances/Appearances";
 import Carousel from "./Carousel/Carousel";
 import { SliderData } from "./Carousel/CharacterData";
 import "./Characters.css";
 
 export default function Contact() {
-  const name = "Luke Skywalker";
-  const image = "https://starwars-visualguide.com/assets/img/characters/1.jpg";
-  const wiki = "https://starwars.fandom.com/wiki/Luke_Skywalker";
-  const born = "19 BBY";
-  const died = "34 ABY";
-  const species = "Human";
-  const affiliations = "Jedi Order, Rebel Alliance, New Republic";
+  // const slideClick = document.querySelector(".slide");
+  // const infoImage = document.querySelector(".upper-image");
+  // const infoName = document.querySelector(".info-name");
+  // const infoBornAndDied = document.querySelector(".info-life");
+  // const infoSpecies = document.querySelector(".info-species");
+  // const infoAffiliations = document.querySelector(".info-affiliations");
+  // const infoWiki = document.querySelector(".info-wiki");
+
+  const [info, setInfo] = useState(SliderData[0]);
+
+  const name = info.name;
+  const image = info.image;
+  const wiki = info.wiki;
+  const born = info.born;
+  const died = info.died;
+  const species = info.species;
+  const affiliations = info.affiliations;
+
+  useEffect(() => {
+    const slide = localStorage.getItem("info");
+
+    if (slide) {
+      setInfo(JSON.parse(slide));
+    }
+  }, []);
+  // Code on line 32 "[]" breaks code to make it run only once, need to create onClick functionality to make it work
 
   return (
     <div className="container justify-content-center my-5">
@@ -20,13 +39,13 @@ export default function Contact() {
           <img src={image} className="col-8 mx-auto my-auto upper-image" />
         </div>
         <div className="col-12 col-md-4 my-auto row">
-          <div>{name}</div>
-          <div>
+          <div className="info-name">{name}</div>
+          <div className="info-life">
             {born} and {died}
           </div>
-          <div>{species}</div>
-          <div>{affiliations}</div>
-          <div>{wiki}</div>
+          <div className="info-species">{species}</div>
+          <div className="info-affiliations">{affiliations}</div>
+          <div className="info-wiki">{wiki}</div>
         </div>
         <div className="col-12 col-md-4 row">
           <div className="col-12">Appearences</div>
