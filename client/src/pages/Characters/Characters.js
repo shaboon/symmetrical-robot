@@ -23,13 +23,13 @@ export default function Contact() {
   const species = info.species;
   const affiliations = info.affiliations;
 
-  useEffect(() => {
+  function carouselClick() {
     const slide = localStorage.getItem("info");
 
     if (slide) {
       setInfo(JSON.parse(slide));
     }
-  }, []);
+  }
   // Code on line 32 "[]" breaks code to make it run only once, need to create onClick functionality to make it work
 
   return (
@@ -58,7 +58,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="col-6 row mx-auto my-5 bg-secondary rounded">
+      <div
+        className="col-6 row mx-auto my-5 bg-secondary rounded"
+        onClick={carouselClick}
+      >
         <Carousel slides={SliderData} />
       </div>
     </div>
