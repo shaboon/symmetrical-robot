@@ -3071,42 +3071,21 @@
           "eyeColor": "green",
           "skinColor": "light",
           "affiliations": [
-            "Alliance to Restore the Republic",
-            "Red Squadron",
-            "Rogue Squadron",
-            "Massassi Group",
-            "Leia Organa's team",
-            "Endor strike team",
-            "Jedi Order",
-            "Bright Tree tribe",
-            "New Republic",
-            "Resistance"
-          ],
-          "masters": [
-            "Obi-Wan Kenobi",
-            "Yoda"
-          ],
-          "apprentices": [
-            "Leia Organa",
-            "Ben Solo (along with a dozen apprentices)",
-            "Rey"
+            "Death Watch",
+            "Nite Owls",
+            "Shadow Collective",
+            "Mandalore Resistance",
+            "Mandalorian Resistance",
+            "Bo-Katan Kryze's unit",
+            "Children of the Watch"
           ],
           "formerAffiliations": [
             
           ],
           "appearances": [
-            "Star Wars: Episode IV - A New Hope", 
-            "Star Wars: Episode V - The Empire Strikes Back",
-            "Star Wars: Episode VI - Return of the Jedi",
-            "Star Wars: Episode III - Revenge of the Sith",
+            "Star Wars: The Clone Wars",
             "Star Wars: Rebels",
-            "Star Wars: Episode VII - The Force Awakens",
-            "Star Wars: Forces of Destiny",
-            "Star Wars: Episode VIII - The Last Jedi",
-            "Star Wars: Episode IX - The Rise of Skywalker",
-            "The Mandalorian", 
-            "The Book of Boba Fett",
-            "Obi-Wan Kenobi"
+            "The Mandalorian"
           ]
         },
   ]
