@@ -13,21 +13,22 @@ const resolvers = {
     profile: async (parent, { profileId }) => {
       return Profile.findOne({ _id: profileId });
     },
-    // By adding context to our query, we can retrieve the logged in user without specifically searching for them
+    
     me: async (parent, args, context) => {
       if (context.user) {
         return Profile.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    // watchLists: async (parent, { username }) => {
-    //   const params = username ? { username } : {};
-    //   return watchList.find(params).sort({ createdAt: -1 })
-    //   .populate('profile');
-    // },
-    // watchList: async (parent, { _id }) => {
-    //   return watchList.findOne({ _id })
-    //   .populate('profile');
+    
+    watchLists: async () => {
+      return WatchListData.find().sort({ createdAt: -1 });
+    },
+    
+    watchList: async (parent, { watchListId }) => {
+      return WatchListData.findOne({ _id: watchListId });
+    },
+
     characters: async () => {
       return Character.find();
     },
@@ -50,6 +51,7 @@ const resolvers = {
 
       return { token, profile };
     },
+
     login: async (parent, { username, password }) => {
       const profile = await Profile.findOne({ username });
 
@@ -67,9 +69,11 @@ const resolvers = {
       return { token, profile };
     },
 
+
     addWatchList: async (parent, args, context) => {
+
       if (context.user) {
-        const watchList = await WatchListData.create({ ...args, username: context.user.username });
+        const watchList = await WatchListData.create({ title, movies, username: context.user.username });
         await Profile.findByIdAndUpdate(
           { _id: context.user._id },
           { $push: { watchLists: watchList._id } },
@@ -79,6 +83,7 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
     removeWatchList: async (parent, { watchListId }, context) => {
       if (context.user) {
         const watchList = await WatchListData.findOneAndDelete({
@@ -105,6 +110,7 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
   },
 };
 
