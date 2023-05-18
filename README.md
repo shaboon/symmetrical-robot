@@ -1,4 +1,4 @@
-# Instellar Index - The Complete Guide For Canon Catch Up
+# Interstellar Index - The Complete Guide For Canon Catch Up
 
 ## Description
 

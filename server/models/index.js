@@ -1,5 +1,5 @@
 const Profile = require('./Profile');
 const Character = require('./character');
-const WatchList = require('./watchList'); 
+const WatchListData = require('./watchListData'); 
 
-module.exports = { Profile, Character, WatchList };
+module.exports = { Profile, Character, WatchListData };
