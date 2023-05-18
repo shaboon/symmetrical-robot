@@ -26,3 +26,15 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_CHARACTERS = gql`
+  query getCharacters {
+    characters {
+      _id
+      name
+      age
+      species
+      // Include other fields you want to retrieve
+    }
+  }
+`;
