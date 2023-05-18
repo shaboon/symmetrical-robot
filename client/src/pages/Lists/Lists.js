@@ -5,6 +5,8 @@ import WatchLists from "../../components/Token/WatchLists";
 
 import Auth from "../../components/utils/auth";
 
+import "./List.css";
+
 // // import Standby from "../../components/Token/Standby";
 // // import Login from "../../components/Token/Login";
 // // import SignUp from "../../components/Token/SignUp";
@@ -17,9 +19,10 @@ export default function Lists() {
 
   if (Auth.loggedIn()) {
     return (
-      <div>
+      <div className="container mx-auto my-3">
+        <Request />
         <div className="col-2">
-          <button className="col-12" onClick={""}>
+          <button className="col-12 new" onClick={""}>
             Create New WatchList
           </button>
         </div>
