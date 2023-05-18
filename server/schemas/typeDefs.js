@@ -48,8 +48,8 @@ const typeDefs = gql`
 
   type watchList {
        _id: ID
-       title: String
-       movies: [String]
+       name: String
+       title: [String]
      }
 
   type Query {
@@ -60,44 +60,29 @@ const typeDefs = gql`
     characters: [Character]!
   }
 
+  type Query {
+    watchLists(username: String): [watchList]
+    watchList(watchListId: ID!): watchList
+  }
+
+  type Mutation {
+    addWatchList(title: String!,
+      movies: [String]!,
+      username: String!): watchList
+    removeWatchList(watchListId: ID!): watchList
+    updateWatchList(watchListId: ID!,
+      title: String!,
+      movies: [String]!,
+      username: String!): watchList
+  }
+
   type Mutation {
     addProfile(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
-    addWatchList(title: String!): watchList
+
   }
 
-  # type Mutation {
-  #   addWatchList(title: String!,
-  #    description: String!,
-  #     image: String!,
-  #      link: String!,
-  #      rating: String!,
-  #       genre: String!,
-  #       year: String!,
-  #        director: String!,
-  #         actors: String!,
-  #          runtime: String!,
-  #           imdbID: String!,
-  #            type: String!,
-  #             user: String!):
-  #              watchList
-  #   removeWatchList(watchListId: ID!): watchList
-  #   updateWatchList(watchListId: ID!,
-  #    title: String!,
-  #     description: String!,
-  #      image: String!,
-  #       link: String!,
-  #        rating: String!,
-  #         genre: String!,
-  #          year: String!,
-  #           director: String!,
-  #            actors: String!,
-  #             runtime: String!,
-  #              imdbID: String!,
-  #               type: String!,
-  #                user: String!):
-  #                 watchList
-  # }
+  
 `;
 
 module.exports = typeDefs;
