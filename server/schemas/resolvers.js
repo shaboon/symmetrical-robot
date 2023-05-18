@@ -32,6 +32,16 @@ const resolvers = {
     characters: async () => {
       return Character.find();
     },
+
+    watchList: async () => {
+      return WatchListData.find();
+    },
+
+    // watchLists: async (parent, { username }) => {
+    //   const params = username ? { username } : {};
+    //   return WatchListData.find(params).sort({ createdAt: -1 });
+    // }
+
   },
 
   Mutation: {
@@ -59,7 +69,9 @@ const resolvers = {
       return { token, profile };
     },
 
-    addWatchList: async (parent, { title, movies }, context) => {
+
+    addWatchList: async (parent, args, context) => {
+
       if (context.user) {
         const watchList = await WatchListData.create({ title, movies, username: context.user.username });
         await Profile.findByIdAndUpdate(
@@ -71,6 +83,34 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
+    removeWatchList: async (parent, { watchListId }, context) => {
+      if (context.user) {
+        const watchList = await WatchListData.findOneAndDelete({
+          _id: watchListId,
+          username: context.user.username,
+        });
+        await Profile.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $pull: { watchLists: watchList._id } },
+          { new: true }
+        );
+        return watchList;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
+    updateWatchList: async (parent, { watchListId, rating }, context) => {
+      if (context.user) {
+        const updatedWatchList = await WatchListData.findOneAndUpdate(
+          { _id: watchListId, username: context.user.username },
+          { $push: { watchLists: updatedWatchList._id } },
+          { new: true }
+        );
+        return updatedWatchList;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
+
   },
 };
 
