@@ -60,9 +60,8 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <form className="col-12 col-md-4 row">
-          <div className="col-12">Appearences</div>
-          <form className="col-12 col-xl-6">
+        <div className="col-12 col-xl-4 row d-flex align-items-center justify-content-center">
+          <form className="col-12 d-flex flex-column justify-content-center">
             <label>
               <select onChange={(e) => setMovie(e.target.value)}>
                 {/* Takes appearance response and iterates over each  */}
@@ -74,7 +73,10 @@ export default function Contact() {
               </select>
             </label>
             <label>
-              <select onChange={(e) => setWatchList(e.target.value)}>
+              <select
+                className="justify-content-center"
+                onChange={(e) => setWatchList(e.target.value)}
+              >
                 {/* Takes option response and iterates over each  */}
                 {options.map((list, index) => (
                   <option key={index} value={list}>
@@ -84,10 +86,14 @@ export default function Contact() {
                 {console.log(options)}
               </select>
             </label>
-            <button onClick={addToWatchList}>Add To WatchList</button>
+            <button
+              className="col-4 justify-content-center"
+              onClick={addToWatchList}
+            >
+              Add To WatchList
+            </button>
           </form>
-          <div className="col-12 col-xl-6"></div>
-        </form>
+        </div>
       </div>
       <div
         className="col-6 row mx-auto my-5 bg-secondary rounded"

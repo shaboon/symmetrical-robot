@@ -1,50 +1,18 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 const watchListSchema = new Schema({
-    title: {
-        type: String,
-        required: true,
-        unique: true,
-        trim: true,
-    },
-    description: {
-        type: String,
-    },
-    image: {
-        type: String,
-    },
-    link: {
-        type: String,
-    },
-    rating: {
-        type: String,
-    },
-    genre: {
-        type: String,
-    },
-    year: {
-        type: String,
-    },
-    director: {
-        type: String,
-    },
-    actors: {
-        type: String,
-    },
-    runtime: {
-        type: String,
-    },
-    imdbID: {
-        type: String,
-    },
-    type: {
-        type: String,
-    },
-    user: {
-        type: String,
-    },
+  title: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+  },
+  movies: {
+    type: Array,
+    default: [],
+  },
 });
 
-const WatchList = model('WatchList', watchListSchema);
+const WatchList = model("WatchList", watchListSchema);
 
 module.exports = WatchList;
