@@ -23,8 +23,8 @@ export default function Contact() {
     }
   }
 
-  const [movie, setMovie] = useState();
-  const [watchList, setWatchList] = useState();
+  const [movie, setMovie] = useState(info.appearances[0]);
+  const [watchList, setWatchList] = useState(info.watchList[0]);
 
   function addToWatchList(e) {
     e.preventDefault();
