@@ -34,7 +34,6 @@ export const QUERY_CHARACTERS = gql`
       name
       age
       species
-      // Include other fields you want to retrieve
     }
   }
 `;
