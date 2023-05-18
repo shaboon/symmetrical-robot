@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Appearances from "./Appearances/Appearances";
 import Carousel from "./Carousel/Carousel";
 import { SliderData } from "./Carousel/CharacterData";
+import DropDown from "../../components/DropDown";
 import "./Characters.css";
 
 export default function Contact() {
@@ -34,7 +35,7 @@ export default function Contact() {
 
   return (
     <div className="container justify-content-center my-5">
-      <div className="col-12 row bg-light rounded">
+      <div className="col-12 row bg-secondary rounded">
         <div className="col-12 col-md-4 row">
           <img src={image} className="col-8 mx-auto my-auto upper-image" />
         </div>
@@ -47,16 +48,16 @@ export default function Contact() {
           <div className="info-affiliations">{affiliations}</div>
           <div className="info-wiki">{wiki}</div>
         </div>
-        <div className="col-12 col-md-4 row">
+        <form className="col-12 col-md-4 row">
           <div className="col-12">Appearences</div>
           <div className="col-12 col-xl-6">
             <Appearances />
           </div>
           <div className="col-12 col-xl-6">
             {/* Turn Line Below to Drop Down For WatchLists */}
-            <Appearances />
+            <DropDown />
           </div>
-        </div>
+        </form>
       </div>
       <div
         className="col-6 row mx-auto my-5 bg-secondary rounded"

@@ -13,8 +13,8 @@ export default function About() {
           src="https://www.retrogames.cc/embed/31371-star-wars-europe.html"
           width="600"
           height="450"
-          frameborder="no"
-          allowfullscreen="true"
+          frameBorder="no"
+          allowFullScreen={true}
           webkitallowfullscreen="true"
           mozallowfullscreen="true"
           scrolling="no"

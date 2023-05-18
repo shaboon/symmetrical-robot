@@ -1,7 +1,8 @@
 const db = require('../config/connection');
-const { Profile, Character } = require('../models');
+const { Profile, Character, WatchList } = require('../models');
 const profileSeeds = require('./profileSeeds.json');
 const characterSeeds = require('./charactersData.json');
+const watchListSeeds = require('./watchListData.json');
 
 db.once('open', async () => {
   try {
@@ -12,6 +13,10 @@ db.once('open', async () => {
     // Delete all existing documents in the Character collection and insert new ones
     await Character.deleteMany({});
     await Character.insertMany(characterSeeds);
+
+    // Delete all existing documents in the WatchList collection and insert new ones
+    await WatchList.deleteMany({});
+    await WatchList.insertMany(watchListSeeds);
 
     console.log('All done!');
     process.exit(0);
