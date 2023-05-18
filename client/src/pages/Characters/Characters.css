@@ -11,6 +11,7 @@
 .link {
   text-decoration: none;
   color: #FFE81F;
+  overflow: hidden;
 }
 
 .info {

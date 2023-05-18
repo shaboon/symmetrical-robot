@@ -10,8 +10,7 @@ export default function Contact() {
   const name = info.name;
   const image = info.image;
   const wiki = info.wiki;
-  const born = info.born;
-  const died = info.died;
+  const homeworld = info.homeworld;
   const species = info.species;
   const affiliations = info.affiliations;
   const appearances = info.appearances;
@@ -45,10 +44,8 @@ export default function Contact() {
         </div>
         <div className="col-12 col-md-4 my-auto row">
           <div className="info info-name">{name}</div>
-          <div className="info info-life">
-            {born} and {died}
-          </div>
           <div className="info info-species">{species}</div>
+          <div className="info info-affiliations">{homeworld}</div>
           <div className="info info-affiliations">
             {affiliations.map((list, index) => (
               <div key={index}>{list}</div>
@@ -63,7 +60,10 @@ export default function Contact() {
         <div className="col-12 col-xl-4 row d-flex align-items-center justify-content-center">
           <form className="col-12 d-flex flex-column justify-content-center">
             <label>
-              <select onChange={(e) => setMovie(e.target.value)}>
+              <select
+                className="form-control"
+                onChange={(e) => setMovie(e.target.value)}
+              >
                 {/* Takes appearance response and iterates over each  */}
                 {appearances.map((list, index) => (
                   <option key={index} value={list}>
@@ -74,7 +74,7 @@ export default function Contact() {
             </label>
             <label>
               <select
-                className="justify-content-center"
+                className="justify-content-center form-control"
                 onChange={(e) => setWatchList(e.target.value)}
               >
                 {/* Takes option response and iterates over each  */}
@@ -87,7 +87,7 @@ export default function Contact() {
               </select>
             </label>
             <button
-              className="col-4 justify-content-center"
+              className="col-4 btn btn-dark text-light justify-content-center"
               onClick={addToWatchList}
             >
               Add To WatchList

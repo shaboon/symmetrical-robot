@@ -2,12 +2,14 @@ import React from "react";
 import { ListData } from "./ListData";
 
 export default function WatchLists() {
-  function deleteMovie() {
+  function deleteMovie(movie) {
     console.log("deleteMovie");
+    console.log(movie);
   }
 
-  function deleteList() {
+  function deleteList(list) {
     console.log("deleteList");
+    console.log(list);
   }
 
   return ListData.map((list, index) => {
@@ -23,8 +25,9 @@ export default function WatchLists() {
                     <li key={index} className="col-12">
                       <div className="container col-12 row justify-content-center list-head">
                         <button
+                          value={movie}
                           className="col-1 d-flex justify-content-center btn btn-danger delete"
-                          onClick={deleteMovie}
+                          onClick={deleteMovie(movie)}
                         >
                           X
                         </button>
@@ -35,7 +38,11 @@ export default function WatchLists() {
                 })}
               </ul>
               <div className="col-4 button">
-                <button className="col-12 btn btn-danger" onClick={deleteList}>
+                <button
+                  value={list.name}
+                  className="col-12 btn btn-danger"
+                  onClick={deleteList(list.name)}
+                >
                   Delete WatchList
                 </button>
               </div>
