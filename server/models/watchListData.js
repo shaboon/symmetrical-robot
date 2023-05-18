@@ -7,44 +7,44 @@ const watchListSchema = new Schema({
         unique: true,
         trim: true,
     },
-    description: {
-        type: String,
-    },
-    image: {
-        type: String,
-    },
-    link: {
-        type: String,
-    },
-    rating: {
-        type: String,
-    },
-    genre: {
-        type: String,
-    },
-    year: {
-        type: String,
-    },
-    director: {
-        type: String,
-    },
-    actors: {
-        type: String,
-    },
-    runtime: {
-        type: String,
-    },
-    imdbID: {
-        type: String,
-    },
-    type: {
-        type: String,
-    },
-    user: {
-        type: String,
-    },
+    // description: {
+    //     type: String,
+    // },
+    // image: {
+    //     type: String,
+    // },
+    // link: {
+    //     type: String,
+    // },
+    // rating: {
+    //     type: String,
+    // },
+    // genre: {
+    //     type: String,
+    // },
+    // year: {
+    //     type: String,
+    // },
+    // director: {
+    //     type: String,
+    // },
+    // actors: {
+    //     type: String,
+    // },
+    // runtime: {
+    //     type: String,
+    // },
+    // imdbID: {
+    //     type: String,
+    // },
+    // type: {
+    //     type: String,
+    // },
+    // user: {
+    //     type: String,
+    // },
 });
 
-const watchList = model('watchList', watchListSchema);
+const watchListData = model('watchListData', watchListDataSchema);
 
 module.exports = watchList;

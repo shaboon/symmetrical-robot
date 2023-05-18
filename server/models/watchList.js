@@ -45,6 +45,6 @@ const watchListSchema = new Schema({
     },
 });
 
-const watchList = model('watchList', watchListSchema);
+const WatchList = model('WatchList', watchListSchema);
 
-module.exports = watchList;
+module.exports = WatchList;
