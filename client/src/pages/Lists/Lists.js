@@ -11,11 +11,21 @@ import Auth from "../../components/utils/auth";
 // // import Profile from "../../components/Token/Profile";
 
 export default function Lists() {
-  //   const httpLink = createHttpLink({
-  //     uri: "/graphql",
-  //   });
+  // const httpLink = createHttpLink({
+  //   uri: "/graphql",
+  // });
+
   if (Auth.loggedIn()) {
-    return <WatchLists />;
+    return (
+      <div>
+        <div className="col-2">
+          <button className="col-12" onClick={""}>
+            Create New WatchList
+          </button>
+        </div>
+        <WatchLists />
+      </div>
+    );
   } else {
     return <Request />;
   }
