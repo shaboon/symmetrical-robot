@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Libre+Franklin&family=Press+Start+2P&display=swap');
 
+/* Request */
+
+.ui {
+    border-radius: 15px;
+    border: 3em solid #FFE81F;
+}
+
+/* WatchLists */
+
 .new {
     width: 100%;
     height: 10%;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .delete {
+    text-align: center;
     width: 10%;
     height: 10%;
+    font-family: 'Libre Franklin', sans-serif;
 }
