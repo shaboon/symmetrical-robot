@@ -12,6 +12,9 @@ export default function Lists() {
 
   function createList(e) {
     e.preventDefault();
+    if ((newList === "") | (newList === undefined)) {
+      return alert("No List Name");
+    }
 
     console.log("Create List");
     console.log(newList);
