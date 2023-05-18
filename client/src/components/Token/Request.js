@@ -22,8 +22,8 @@ const Request = () => {
         <div>
           {Auth.loggedIn() ? (
             <>
-              <Link className="btn btn-lg btn-primary m-2" to="/Lists">
-                View Community WatchLists
+              <Link className="btn btn-lg btn-dark m-2 ui" to="/Characters">
+                Let's Peek at Some Characters!
               </Link>
               <button className="btn btn-lg btn-light m-2" onClick={logout}>
                 Logout
@@ -31,7 +31,7 @@ const Request = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-primary m-2" to="/login">
+              <Link className="btn btn-lg btn-dark m-2" to="/login">
                 Login
               </Link>
               <Link className="btn btn-lg btn-light m-2" to="/signup">

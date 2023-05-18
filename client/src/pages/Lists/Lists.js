@@ -17,12 +17,16 @@ export default function Lists() {
   //   uri: "/graphql",
   // });
 
+  function createList() {
+    console.log("Create List");
+  }
+
   if (Auth.loggedIn()) {
     return (
       <div className="container mx-auto my-3">
         <Request />
         <div className="col-2">
-          <button className="col-12 new" onClick={""}>
+          <button className="col-12 new btn btn-secondary" onClick={createList}>
             Create New WatchList
           </button>
         </div>

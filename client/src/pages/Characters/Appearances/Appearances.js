@@ -17,7 +17,7 @@ export default function Appearances() {
     <div>
       <ul>
         {appearances.map((appearance) => (
-          <button>{appearance}</button>
+          <button className="btn btn-dark text-light">{appearance}</button>
         ))}
       </ul>
     </div>
