@@ -23,8 +23,10 @@ export default function Contact() {
     }
   }
 
-  const [movie, setMovie] = useState(info.appearances[0]);
-  const [watchList, setWatchList] = useState(info.watchList[0]);
+  const options = ["WatchList 1", "WatchList 2", "WatchList 3"];
+
+  const [movie, setMovie] = useState(info.appearances);
+  const [watchList, setWatchList] = useState(options[0]);
 
   function addToWatchList(e) {
     e.preventDefault();
@@ -33,8 +35,6 @@ export default function Contact() {
     console.log(movie);
     console.log(watchList);
   }
-
-  const options = ["WatchList 1", "WatchList 2", "WatchList 3"];
 
   return (
     <div className="container justify-content-center my-5">
