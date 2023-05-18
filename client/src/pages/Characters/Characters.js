@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Appearances from "./Appearances/Appearances";
 import Carousel from "./Carousel/Carousel";
 import { SliderData } from "./Carousel/CharacterData";
-import DropDown from "../../components/DropDown";
 import "./Characters.css";
 
 export default function Contact() {
@@ -16,6 +14,7 @@ export default function Contact() {
   const died = info.died;
   const species = info.species;
   const affiliations = info.affiliations;
+  const appearances = info.appearances;
 
   function carouselClick() {
     const slide = localStorage.getItem("info");
@@ -25,11 +24,7 @@ export default function Contact() {
     }
   }
 
-  function addToList(event) {
-    event.preventDefault();
-
-    console.log("button Clicked");
-  }
+  const options = ["WatchList 1", "WatchList 2", "WatchList 3"];
 
   return (
     <div className="container justify-content-center my-5">
@@ -52,12 +47,31 @@ export default function Contact() {
         </div>
         <form className="col-12 col-md-4 row">
           <div className="col-12">Appearences</div>
-          <div className="col-12 col-xl-6">
-            <Appearances onClick={addToList} />
-          </div>
-          <div className="col-12 col-xl-6">
-            <DropDown />
-          </div>
+          <form className="col-12 col-xl-6">
+            <label>
+              <select>
+                {/* Takes option response and iterates over each  */}
+                {appearances.map((list, index) => (
+                  <option key={index} value={list}>
+                    {list}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              <select>
+                {/* Takes option response and iterates over each  */}
+                {options.map((list, index) => (
+                  <option key={index} value={list}>
+                    {list}
+                  </option>
+                ))}
+                {console.log(options)}
+              </select>
+            </label>
+            <button>Add To WatchList</button>
+          </form>
+          <div className="col-12 col-xl-6"></div>
         </form>
       </div>
       <div
