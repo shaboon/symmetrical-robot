@@ -55,7 +55,8 @@ const typeDefs = gql`
   type Query {
     profiles: [Profile]!
     profile(profileId: ID!): Profile
-    # Because we have the context functionality in place to check a JWT and decode its data, we can use a query that will always find and return the logged in user's data
+    watchLists: [watchList]!
+    watchList(watchListId: ID!): watchList
     me: Profile
     characters: [Character]!
   }
@@ -63,41 +64,8 @@ const typeDefs = gql`
   type Mutation {
     addProfile(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
-    addWatchList(title: String!): watchList
+    addWatchList(title: String!, movies: [String]): watchList
   }
-
-  # type Mutation {
-  #   addWatchList(title: String!,
-  #    description: String!,
-  #     image: String!,
-  #      link: String!,
-  #      rating: String!,
-  #       genre: String!,
-  #       year: String!,
-  #        director: String!,
-  #         actors: String!,
-  #          runtime: String!,
-  #           imdbID: String!,
-  #            type: String!,
-  #             user: String!):
-  #              watchList
-  #   removeWatchList(watchListId: ID!): watchList
-  #   updateWatchList(watchListId: ID!,
-  #    title: String!,
-  #     description: String!,
-  #      image: String!,
-  #       link: String!,
-  #        rating: String!,
-  #         genre: String!,
-  #          year: String!,
-  #           director: String!,
-  #            actors: String!,
-  #             runtime: String!,
-  #              imdbID: String!,
-  #               type: String!,
-  #                user: String!):
-  #                 watchList
-  # }
 `;
 
 module.exports = typeDefs;
