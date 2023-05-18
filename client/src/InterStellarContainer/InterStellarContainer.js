@@ -17,7 +17,6 @@ import WatchLists from "../components/Token/WatchLists";
 
 import Login from "../components/Token/Login";
 import SignUp from "../components/Token/SignUp";
-import Profile from "../components/Token/Profile";
 
 import Game from "../pages/Game/Game";
 import GalaxyBackground from "../components/GalaxyBackground";
