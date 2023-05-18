@@ -41,3 +41,17 @@ export const QUERY_CHARACTERS = gql`
     }
   }
 `;
+
+export const QUERY_WATCHLIST = gql`
+  query GetWatchlist {
+    watchlist {
+      id
+      name
+      items {
+        id
+        name
+        description
+      }
+    }
+  }
+`;
