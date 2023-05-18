@@ -15,15 +15,15 @@ const typeDefs = gql`
   type Character {
     _id: ID
     name: String
-    height: String
-    mass: String
+    height: Int
+    mass: Int
     gender: String
-    homeworld: String
+    homeworld: [String]
     species: String
     wiki: String
     image: String
-    dateCreated: String
-    dateDestroyed: String
+    dateCreated: Int
+    dateDestroyed: Int
     destroyedLocation: String
     creator: String
     manufacturer: String
@@ -39,7 +39,7 @@ const typeDefs = gql`
     eyeColor: String
     skinColor: String
     cybernetics: String
-    affiliation: String
+    affiliations: [String]
     masters: String
     apprentices: String
     formerAffiliations: String
