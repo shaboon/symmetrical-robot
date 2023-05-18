@@ -3,7 +3,7 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
 const { authMiddleware } = require("./utils/auth");
-
+const cors = require("cors")
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 
@@ -14,16 +14,18 @@ const server = new ApolloServer({
   resolvers,
   context: authMiddleware,
 });
-
+app.use(cors())
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
-
+// "/" for graphql, "*" for deployment function fixes
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  if (process.env.NODE_ENV === "production") {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+    }
 });
 
 // Create a new instance of an Apollo server with the GraphQL schema
