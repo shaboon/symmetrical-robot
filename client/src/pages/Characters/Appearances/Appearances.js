@@ -17,7 +17,9 @@ export default function Appearances() {
     <div>
       <ul>
         {appearances.map((appearance) => (
-          <button className="btn btn-dark text-light">{appearance}</button>
+          <button type="submit" className="btn btn-dark text-light">
+            {appearance}
+          </button>
         ))}
       </ul>
     </div>
