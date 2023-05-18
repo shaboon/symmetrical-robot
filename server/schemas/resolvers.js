@@ -1,10 +1,10 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { Profile } = require('../models');
-const { WatchList } = require('../models');
-const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require("apollo-server-express");
+const { Profile } = require("../models");
+const { Character } = require("../models");
+const { WatchList } = require("../models");
+const { signToken } = require("../utils/auth");
 
 // const { watchList, profile } = require('../models');  variable for watchlist
-
 
 const resolvers = {
   Query: {
@@ -20,7 +20,7 @@ const resolvers = {
       if (context.user) {
         return Profile.findOne({ _id: context.user._id });
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     // watchLists: async (parent, { username }) => {
     //   const params = username ? { username } : {};
@@ -30,29 +30,29 @@ const resolvers = {
     // watchList: async (parent, { _id }) => {
     //   return watchList.findOne({ _id })
     //   .populate('profile');
-
+    characters: async () => {
+      return Character.find();
+    },
   },
 
   Mutation: {
     addProfile: async (parent, { username, password }) => {
-
       const profile = await Profile.create({ username, password });
       const token = signToken(profile);
 
       return { token, profile };
     },
     login: async (parent, { username, password }) => {
-
       const profile = await Profile.findOne({ username });
 
       if (!profile) {
-        throw new AuthenticationError('No profile with this username found!');
+        throw new AuthenticationError("No profile with this username found!");
       }
 
       const correctPw = await profile.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect password!');
+        throw new AuthenticationError("Incorrect password!");
       }
 
       const token = signToken(profile);
@@ -96,6 +96,7 @@ const resolvers = {
     //   }
     //   throw new AuthenticationError('You need to be logged in!');
     // }
-}};
+  },
+};
 
 module.exports = resolvers;

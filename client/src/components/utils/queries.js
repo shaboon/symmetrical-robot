@@ -32,9 +32,12 @@ export const QUERY_CHARACTERS = gql`
     characters {
       _id
       name
-      age
+      image
+      wiki
+      born
+      died
       species
-      // Include other fields you want to retrieve
+      affiliations
     }
   }
 `;
