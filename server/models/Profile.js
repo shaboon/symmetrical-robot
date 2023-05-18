@@ -13,6 +13,12 @@ const profileSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  watchlists: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'watchListData',
+    },
+  ]
 });
 
 // set up pre-save middleware to create password

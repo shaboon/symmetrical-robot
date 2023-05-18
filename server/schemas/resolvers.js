@@ -1,7 +1,7 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { Profile } = require("../models");
 const { Character } = require("../models");
-const { WatchList } = require("../models");
+const { WatchListData } = require("../models");
 const { signToken } = require("../utils/auth");
 
 // const { watchList, profile } = require('../models');  variable for watchlist
@@ -58,18 +58,18 @@ const resolvers = {
       const token = signToken(profile);
       return { token, profile };
     },
-    // addWatchList: async (parent, args, context) => {
-    //   if (context.user) {
-    //     const watchList = await watchList.create({ ...args, username: context.user.username });
-    //     await Profile.findByIdAndUpdate(
-    //       { _id: context.user._id },
-    //       { $push: { watchLists: watchList._id } },
-    //       { new: true }
-    //     );
-    //     return watchList;
-    //   }
-    //   throw new AuthenticationError('You need to be logged in!');
-    // },
+    addWatchList: async (parent, args, context) => {
+      if (context.user) {
+        const watchList = await WatchListData.create({ ...args, username: context.user.username });
+        await Profile.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $push: { watchLists: watchList._id } },
+          { new: true }
+        );
+        return watchList;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
     // removeWatchList: async (parent, { watchListId }, context) => {
     //   if (context.user) {
     //     const watchList = await watchList.findOneAndDelete({
