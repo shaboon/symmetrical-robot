@@ -24,6 +24,17 @@ export default function Contact() {
     }
   }
 
+  const [movie, setMovie] = useState();
+  const [watchList, setWatchList] = useState();
+
+  function addToWatchList(e) {
+    e.preventDefault();
+
+    console.log("Add to WatchList button clicked");
+    console.log(movie);
+    console.log(watchList);
+  }
+
   const options = ["WatchList 1", "WatchList 2", "WatchList 3"];
 
   return (
@@ -38,7 +49,11 @@ export default function Contact() {
             {born} and {died}
           </div>
           <div className="info info-species">{species}</div>
-          <div className="info info-affiliations">{affiliations}</div>
+          <div className="info info-affiliations">
+            {affiliations.map((list, index) => (
+              <div key={index}>{list}</div>
+            ))}
+          </div>
           <div className="info info-wiki">
             <a className="link" href={wiki}>
               {wiki}
@@ -49,8 +64,8 @@ export default function Contact() {
           <div className="col-12">Appearences</div>
           <form className="col-12 col-xl-6">
             <label>
-              <select>
-                {/* Takes option response and iterates over each  */}
+              <select onChange={(e) => setMovie(e.target.value)}>
+                {/* Takes appearance response and iterates over each  */}
                 {appearances.map((list, index) => (
                   <option key={index} value={list}>
                     {list}
@@ -59,7 +74,7 @@ export default function Contact() {
               </select>
             </label>
             <label>
-              <select>
+              <select onChange={(e) => setWatchList(e.target.value)}>
                 {/* Takes option response and iterates over each  */}
                 {options.map((list, index) => (
                   <option key={index} value={list}>
@@ -69,7 +84,7 @@ export default function Contact() {
                 {console.log(options)}
               </select>
             </label>
-            <button>Add To WatchList</button>
+            <button onClick={addToWatchList}>Add To WatchList</button>
           </form>
           <div className="col-12 col-xl-6"></div>
         </form>
