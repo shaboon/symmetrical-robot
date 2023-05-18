@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { Profile } = require('../models');
+const { WatchList } = require('../models');
 const { signToken } = require('../utils/auth');
 
 // const { watchList, profile } = require('../models');  variable for watchlist
