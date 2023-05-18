@@ -1,6 +1,9 @@
 import React from "react";
 import { ListData } from "./ListData";
 
+// import { useMutation } from "@apollo/client";
+// import { DELETE_MOVIE_MUTATION } from "../utils/mutations";
+
 export default function WatchLists() {
   function deleteMovie(movie) {
     console.log("deleteMovie");
