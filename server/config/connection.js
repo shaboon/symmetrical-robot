@@ -1,6 +1,13 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/interstellar-index', {
+// Check if the environment is production, then it should use the .env file
+const isProduction = process.env.NODE_ENV === 'production';
+
+const DB_URI = isProduction 
+  ? process.env.MONGODB_URI 
+  : 'mongodb://localhost/interstellar-index';
+
+mongoose.connect(DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
