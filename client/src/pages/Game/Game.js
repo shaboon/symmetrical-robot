@@ -8,6 +8,7 @@ export default function About() {
         JOIN THE FIGHT
       </div>
       <div className="col-8 row justify-content-center mx-auto">
+        {/* Game Import */}
         <iframe
           className="screen"
           src="https://www.retrogames.cc/embed/31371-star-wars-europe.html"

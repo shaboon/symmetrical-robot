@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Appearances from "./Appearances/Appearances";
 import Carousel from "./Carousel/Carousel";
 import { SliderData } from "./Carousel/CharacterData";
@@ -6,15 +6,8 @@ import DropDown from "../../components/DropDown";
 import "./Characters.css";
 
 export default function Contact() {
-  // const slideClick = document.querySelector(".slide");
-  // const infoImage = document.querySelector(".upper-image");
-  // const infoName = document.querySelector(".info-name");
-  // const infoBornAndDied = document.querySelector(".info-life");
-  // const infoSpecies = document.querySelector(".info-species");
-  // const infoAffiliations = document.querySelector(".info-affiliations");
-  // const infoWiki = document.querySelector(".info-wiki");
-
   const [info, setInfo] = useState(SliderData[0]);
+  console.log(info);
 
   const name = info.name;
   const image = info.image;
@@ -31,7 +24,12 @@ export default function Contact() {
       setInfo(JSON.parse(slide));
     }
   }
-  // Code on line 32 "[]" breaks code to make it run only once, need to create onClick functionality to make it work
+
+  function addToList(event) {
+    event.preventDefault();
+
+    console.log("button Clicked");
+  }
 
   return (
     <div className="container justify-content-center my-5">
@@ -40,21 +38,24 @@ export default function Contact() {
           <img src={image} className="col-8 mx-auto my-auto upper-image" />
         </div>
         <div className="col-12 col-md-4 my-auto row">
-          <div className="info-name">{name}</div>
-          <div className="info-life">
+          <div className="info info-name">{name}</div>
+          <div className="info info-life">
             {born} and {died}
           </div>
-          <div className="info-species">{species}</div>
-          <div className="info-affiliations">{affiliations}</div>
-          <div className="info-wiki">{wiki}</div>
+          <div className="info info-species">{species}</div>
+          <div className="info info-affiliations">{affiliations}</div>
+          <div className="info info-wiki">
+            <a className="link" href={wiki}>
+              {wiki}
+            </a>
+          </div>
         </div>
         <form className="col-12 col-md-4 row">
           <div className="col-12">Appearences</div>
           <div className="col-12 col-xl-6">
-            <Appearances />
+            <Appearances onClick={addToList} />
           </div>
           <div className="col-12 col-xl-6">
-            {/* Turn Line Below to Drop Down For WatchLists */}
             <DropDown />
           </div>
         </form>
