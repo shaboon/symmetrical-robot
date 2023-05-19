@@ -48,7 +48,7 @@ export default function Contact() {
       const { data } = await addWatchList({
         variables: {
           name: watchList,
-          title: [movie],
+          title: movie,
         },
       });
     } catch (error) {

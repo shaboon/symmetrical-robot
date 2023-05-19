@@ -8,6 +8,7 @@ const watchListSchema = new Schema({
     trim: true,
   },
   title: {
+    sparse: true,
     type: Array,
     default: [],
   },

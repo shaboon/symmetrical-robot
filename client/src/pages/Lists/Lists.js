@@ -3,22 +3,32 @@ import React, { useState } from "react";
 import Request from "../../components/Token/Request";
 import WatchLists from "../../components/Token/WatchLists.tsx";
 import Auth from "../../components/utils/auth";
-import {
-  useGetWatchlist,
-  useAddMovieToWatchlist,
-} from "../../hooks/watchlists.js";
+import { useGetWatchlist } from "../../hooks/watchlists.js";
+import { useMutation } from "@apollo/client";
+import { CREATE_WATCHLIST } from "../../components/utils/mutations.js";
 
 import "./List.css";
 
-export default function Lists() {
+function Lists() {
   const [newList, setNewList] = useState("");
 
   const { data, loading } = useGetWatchlist();
+  const [createWatchlist] = useMutation(CREATE_WATCHLIST);
 
-  function createList(e) {
-    e.preventDefault();
+  async function createList(e) {
     if (newList.trim() === "") {
       return alert("No List Name");
+    }
+    try {
+      const { data } = await createWatchlist({
+        variables: {
+          name: newList,
+          title: [],
+        },
+      });
+      this.forceUpdate();
+    } catch (error) {
+      console.error("Error creating a watchlist:", error);
     }
   }
 
@@ -34,7 +44,7 @@ export default function Lists() {
           <form className="col-12">
             <button
               className="col-3 new btn btn-secondary"
-              onClick={createList}
+              onClick={(e) => createList(e)}
             >
               Create New WatchList
             </button>
@@ -53,3 +63,5 @@ export default function Lists() {
     return <Request />;
   }
 }
+
+export default React.memo(Lists);

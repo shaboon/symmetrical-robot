@@ -51,13 +51,3 @@ export const QUERY_WATCHLIST = gql`
     }
   }
 `;
-
-export const ADD_MOVIE_TO_WATCHLIST = gql`
-  mutation addMovieToWatchList($name: String!, $title: String!) {
-    addMovieToWatchList(name: $name, title: $title) {
-      _id
-      name
-      title
-    }
-  }
-`;
