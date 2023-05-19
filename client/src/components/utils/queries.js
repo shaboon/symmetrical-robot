@@ -61,3 +61,4 @@ export const ADD_MOVIE_TO_WATCHLIST = gql`
     }
   }
 `;
+

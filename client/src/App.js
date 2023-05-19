@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
-import Characters from "./pages/Characters/Characters";
+import Characters from "./pages/Characters/Characters.tsx";
 import Lists from "./pages/Lists/Lists";
 
 import Login from "./components/Token/Login";
@@ -20,7 +20,6 @@ import SignUp from "./components/Token/SignUp";
 import Game from "./pages/Game/Game";
 import GalaxyBackground from "./components/GalaxyBackground";
 import "./main.css";
-
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -43,7 +42,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 export default function App() {
-
   const [currentPage, setCurrentPage] = useState("");
 
   useEffect(() => {

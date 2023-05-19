@@ -12,7 +12,6 @@ function DropDown() {
             {list}
           </option>
         ))}
-        {console.log(options)}
       </select>
     </label>
   );

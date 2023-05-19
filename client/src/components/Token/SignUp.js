@@ -34,7 +34,6 @@ const Signup = () => {
           password: formState.password,
         },
       });
-      console.log(formState);
       Auth.login(result.data.addProfile.token);
     } catch (e) {
       console.error(e);

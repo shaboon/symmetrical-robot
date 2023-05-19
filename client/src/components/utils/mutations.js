@@ -34,11 +34,11 @@ export const DELETE_MOVIE_MUTATION = gql`
 `;
 
 export const ADD_TO_WATCHLIST = gql`
-  mutation AddToWatchList($title: String!, $movies: [String]!, $username: String!) {
-    addWatchList(title: $title, movies: $movies, username: $username) {
+  mutation AddToWatchList($name: String!, $title: [String]!) {
+    addWatchList(title: $title, name: $name) {
       _id
+      name
       title
-      movies
     }
   }
 `;

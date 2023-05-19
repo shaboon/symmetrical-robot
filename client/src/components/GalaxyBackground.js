@@ -24,7 +24,6 @@ const GalaxyBackground = (props) => {
   const svgGroup = React.createRef();
 
   React.useEffect(() => {
-    console.log("React.useEffect");
     const handleResize = () => {
       if (svgGroup.current) {
         svgGroup.current.innerHTML = "";

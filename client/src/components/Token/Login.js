@@ -22,9 +22,8 @@ const Login = (props) => {
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
     try {
-      const result  = await login({
+      const result = await login({
         variables: { ...formState },
       });
 
@@ -58,7 +57,7 @@ const Login = (props) => {
                   placeholder="Your username"
                   name="username"
                   type="text"
-                  onChange={handleChange} 
+                  onChange={handleChange}
                   value={formState.username}
                 />
                 <input
@@ -66,7 +65,7 @@ const Login = (props) => {
                   placeholder="******"
                   name="password"
                   type="password"
-                  onChange={handleChange} 
+                  onChange={handleChange}
                   value={formState.password}
                 />
                 <button
