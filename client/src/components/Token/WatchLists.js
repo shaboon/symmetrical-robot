@@ -1,10 +1,16 @@
 import React from "react";
-import { ListData } from "./ListData";
+import { useQuery } from "@apollo/client";
+import { QUERY_WATCHLIST } from "../utils/queries";
 
 // import { useMutation } from "@apollo/client";
 // import { DELETE_MOVIE_MUTATION } from "../utils/mutations";
 
 export default function WatchLists() {
+  const { loading, data } = useQuery(QUERY_WATCHLIST);
+  console.log(data);
+  console.log(data);
+  const ListData = data?.watchLists || [];
+
   function deleteMovie(movie) {
     console.log("deleteMovie");
     console.log(movie);
