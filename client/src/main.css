@@ -1,6 +1,6 @@
 body {
     width: auto;
-    height: 1500px;
+    height: auto + 500px;
     background-color: #000000 !important;
 }
 

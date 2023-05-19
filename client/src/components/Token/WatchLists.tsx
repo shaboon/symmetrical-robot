@@ -1,21 +1,12 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
-import { QUERY_WATCHLIST } from "../utils/queries";
 
-// import { useMutation } from "@apollo/client";
-// import { DELETE_MOVIE_MUTATION } from "../utils/mutations";
+type Props = {
+  watchLists: any[],
+};
 
-export default function WatchLists() {
-  const { data } = useQuery(QUERY_WATCHLIST);
-  console.log(data);
-  console.log(useQuery(QUERY_WATCHLIST));
-  // console.log(data.watchLists[0]);
-  // console.log(data.watchLists[0].name);
-  // const ListData = data.watchLists || [];
-  // const ListData = ["wow"];
-  // console.log(ListData.type);
-  // console.log(ListData);
 
+// Had to convert to tsx due to issues with non-mapping of props
+export default function WatchLists({ watchLists }: Props) {
   function deleteMovie(movie) {
     console.log("deleteMovie");
     console.log(movie);
@@ -25,8 +16,7 @@ export default function WatchLists() {
     console.log("deleteList");
     console.log(list);
   }
-
-  return data.map((list, index) => {
+  return watchLists.map((list, index) => {
     return (
       <div className="container col-12 row mx-auto my-2">
         <div className="container d-flex flex-column bg-secondary justify-content-center col-12 px-4 rounded single-card">
@@ -41,7 +31,7 @@ export default function WatchLists() {
                         <button
                           value={title}
                           className="col-1 d-flex justify-content-center btn btn-danger delete"
-                          onClick={deleteMovie(title)}
+                          onClick={() => deleteMovie(title)}
                         >
                           X
                         </button>
@@ -55,7 +45,7 @@ export default function WatchLists() {
                 <button
                   value={list.name}
                   className="col-12 btn btn-danger"
-                  onClick={deleteList(list.name)}
+                  onClick={() => deleteList(list.name)}
                 >
                   Delete WatchList
                 </button>
