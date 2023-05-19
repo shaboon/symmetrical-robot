@@ -1,7 +1,7 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { Profile } = require("../models");
 const { Character } = require("../models");
-const { WatchListData } = require("../models");
+const { WatchList } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -13,20 +13,20 @@ const resolvers = {
     profile: async (parent, { profileId }) => {
       return Profile.findOne({ _id: profileId });
     },
-    
+
     me: async (parent, args, context) => {
       if (context.user) {
         return Profile.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    
+
     watchLists: async () => {
-      return WatchListData.find().sort({ createdAt: -1 });
+      return WatchList.find().sort({ createdAt: -1 });
     },
-    
+
     watchList: async (parent, { watchListId }) => {
-      return WatchListData.findOne({ _id: watchListId });
+      return WatchList.findOne({ _id: watchListId });
     },
 
     characters: async () => {
@@ -41,7 +41,6 @@ const resolvers = {
     //   const params = username ? { username } : {};
     //   return WatchListData.find(params).sort({ createdAt: -1 });
     // }
-
   },
 
   Mutation: {
@@ -69,11 +68,13 @@ const resolvers = {
       return { token, profile };
     },
 
-
     addWatchList: async (parent, args, context) => {
-
       if (context.user) {
-        const watchList = await WatchListData.create({ title, movies, username: context.user.username });
+        const watchList = await WatchListData.create({
+          title,
+          movies,
+          username: context.user.username,
+        });
         await Profile.findByIdAndUpdate(
           { _id: context.user._id },
           { $push: { watchLists: watchList._id } },
@@ -81,7 +82,7 @@ const resolvers = {
         );
         return watchList;
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
 
     removeWatchList: async (parent, { watchListId }, context) => {
@@ -97,7 +98,7 @@ const resolvers = {
         );
         return watchList;
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     updateWatchList: async (parent, { watchListId, rating }, context) => {
       if (context.user) {
@@ -108,9 +109,8 @@ const resolvers = {
         );
         return updatedWatchList;
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
-
   },
 };
 

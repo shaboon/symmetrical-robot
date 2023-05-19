@@ -44,14 +44,10 @@ export const QUERY_CHARACTERS = gql`
 
 export const QUERY_WATCHLIST = gql`
   query GetWatchlist {
-    watchlist {
-      id
+    watchLists {
+      _id
       name
-      items {
-        id
-        name
-        description
-      }
+      title
     }
   }
 `;
