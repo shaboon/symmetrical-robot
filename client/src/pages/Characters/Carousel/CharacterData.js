@@ -518,7 +518,7 @@ export const SliderData = [
     height: 2.28,
     mass: 112,
     gender: "male",
-    homeworld: "kashyyyk",
+    homeworld: "Kashyyyk",
     wiki: "http://starwars.wikia.com/wiki/Chewbacca",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/4/48/Chewbacca_TLJ.png",
@@ -556,7 +556,7 @@ export const SliderData = [
     height: 1.8,
     mass: 80,
     gender: "male",
-    homeworld: "corellia",
+    homeworld: "Corellia",
     wiki: "http://starwars.wikia.com/wiki/Han_Solo",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/e/e2/TFAHanSolo.png",
@@ -597,7 +597,7 @@ export const SliderData = [
     height: 1.74,
     mass: 74,
     gender: "male",
-    homeworld: ["Rodia", "Tatooine"],
+    homeworld: "Rodia",
     wiki: "http://starwars.wikia.com/wiki/Greedo",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/c/c6/Greedo.jpg",
@@ -620,7 +620,7 @@ export const SliderData = [
     height: 3.9,
     mass: 1358,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Jabba_Desilijic_Tiure",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/7f/Jabba_SWSB.png",
@@ -654,7 +654,7 @@ export const SliderData = [
     height: 1.7,
     mass: 77,
     gender: "male",
-    homeworld: "corellia",
+    homeworld: "Corellia",
     wiki: "http://starwars.wikia.com/wiki/Wedge_Antilles",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/6/60/WedgeHelmetless-ROTJHD.jpg",
@@ -688,7 +688,7 @@ export const SliderData = [
     height: 1.8,
     mass: 110,
     gender: "male",
-    homeworld: "bestine",
+    homeworld: "Bestine",
     wiki: "http://starwars.wikia.com/wiki/Jek_Tono_Porkins",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/e/eb/JekPorkins-DB.png",
@@ -758,7 +758,7 @@ export const SliderData = [
     height: 1.78,
     mass: 75,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Palpatine",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/d/d8/Emperor_Sidious.png",
@@ -820,7 +820,7 @@ export const SliderData = [
     height: 1.83,
     mass: 78,
     gender: "male",
-    homeworld: "kamino",
+    homeworld: "Kamino",
     wiki: "http://starwars.wikia.com/wiki/Boba_Fett",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/79/Boba_Fett_HS_Fathead.png",
@@ -898,7 +898,7 @@ export const SliderData = [
     height: 1.9,
     mass: 113,
     gender: "male",
-    homeworld: "trandosha",
+    homeworld: "Trandosha",
     wiki: "http://starwars.wikia.com/wiki/Bossk",
     image: "https://vignette.wikia.nocookie.net/starwars/images/1/1d/Bossk.png",
     species: "Trandoshan",
@@ -924,7 +924,7 @@ export const SliderData = [
     height: 1.77,
     mass: 79,
     gender: "male",
-    homeworld: "socorro",
+    homeworld: "Socorro",
     wiki: "http://starwars.wikia.com/wiki/Lando_Calrissian",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/8/8f/Lando_ROTJ.png",
@@ -958,7 +958,7 @@ export const SliderData = [
     height: 1.75,
     mass: 79,
     gender: "male",
-    homeworld: "bespin",
+    homeworld: "Bespin",
     wiki: "http://starwars.wikia.com/wiki/Lobot",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/9/96/SWE_Lobot.jpg",
@@ -983,14 +983,14 @@ export const SliderData = [
     height: 1.8,
     mass: 83,
     gender: "male",
-    homeworld: "mon cala",
+    homeworld: "Mon Cala",
     wiki: "http://starwars.wikia.com/wiki/Gial_Ackbar",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/2/29/Admiral_Ackbar_RH.png",
     born: -50,
     died: 34,
     diedLocation: "raddus, oetchi system",
-    species: "mon calamari",
+    species: "Mon Calamari",
     eyeColor: "orange",
     skinColor: "brown mottle",
     affiliations: [
@@ -1022,7 +1022,7 @@ export const SliderData = [
     name: "Mon Mothma",
     height: 1.73,
     gender: "female",
-    homeworld: "chandrila",
+    homeworld: "Chandrila",
     wiki: "http://starwars.wikia.com/wiki/Mon_Mothma",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png",
@@ -1074,7 +1074,7 @@ export const SliderData = [
     height: 0.8,
     mass: 20,
     gender: "male",
-    homeworld: "endor",
+    homeworld: "Endor",
     wiki: "http://starwars.wikia.com/wiki/Wicket_W._Warrick",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/4/4f/Wicket_RotJ.png",
@@ -1097,7 +1097,7 @@ export const SliderData = [
     height: 1.6,
     mass: 68,
     gender: "male",
-    homeworld: "sullust",
+    homeworld: "Sullust",
     wiki: "http://starwars.wikia.com/wiki/Nien_Nunb",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/1/14/Old_nien_nunb_-_profile.png",
@@ -1126,7 +1126,7 @@ export const SliderData = [
     height: 1.93,
     mass: 89,
     gender: "male",
-    homeworld: "coruscant",
+    homeworld: "Coruscant",
     wiki: "http://starwars.wikia.com/wiki/Qui-Gon_Jinn",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/f/f6/Qui-Gon_Jinn_Headshot_TPM.jpg",
@@ -1158,7 +1158,7 @@ export const SliderData = [
     height: 1.91,
     mass: 90,
     gender: "male",
-    homeworld: "neimoidia",
+    homeworld: "Neimoidia",
     wiki: "http://starwars.wikia.com/wiki/Nute_Gunray",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/f/fd/Nute_Gunray_SWE.png",
@@ -1185,7 +1185,7 @@ export const SliderData = [
     name: "Finis Valorum",
     height: 1.7,
     gender: "male",
-    homeworld: "coruscant",
+    homeworld: "Coruscant",
     wiki: "http://starwars.wikia.com/wiki/Finis_Valorum",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/5/51/ValorumPortrait-SWE.png",
@@ -1207,7 +1207,7 @@ export const SliderData = [
     height: 1.65,
     mass: 45,
     gender: "female",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Padm%C3%A9_Amidala",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/b/b2/Padmegreenscrshot.jpg",
@@ -1245,7 +1245,7 @@ export const SliderData = [
     height: 1.96,
     mass: 66,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Jar_Jar_Binks",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/d/d2/Jar_Jar_aotc.jpg",
@@ -1275,7 +1275,7 @@ export const SliderData = [
     height: 2.24,
     mass: 82,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Roos_Tarpals",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/c/ca/TarpalsHS.jpg",
@@ -1296,7 +1296,7 @@ export const SliderData = [
     name: "Rugor Nass",
     height: 2.06,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Rugor_Nass",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/d/d8/Bossnass.jpg",
@@ -1315,7 +1315,7 @@ export const SliderData = [
     name: "Ric Olié",
     height: 1.83,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Ric_Oli%C3%A9",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/4/4c/RicOlieHS-SWE.png",
@@ -1336,7 +1336,7 @@ export const SliderData = [
     name: "Watto",
     height: 1.37,
     gender: "male",
-    homeworld: "toydaria",
+    homeworld: "Toydaria",
     wiki: "http://starwars.wikia.com/wiki/Watto",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/e/eb/WattoHS.jpg",
@@ -1357,11 +1357,11 @@ export const SliderData = [
     height: 1.12,
     mass: 40,
     gender: "male",
-    homeworld: "malastare",
+    homeworld: "Malastare",
     wiki: "http://starwars.wikia.com/wiki/Sebulba",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/1/14/Sebulba_Headshot_Closeup.png",
-    species: "dug",
+    species: "Dug",
     eyeColor: "yellow",
     skinColor: "purple and beige",
     affiliations: [],
@@ -1373,7 +1373,7 @@ export const SliderData = [
     name: "Quarsh Panaka",
     height: 1.83,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Quarsh_Panaka",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/72/PanakaHS-TPM.png",
@@ -1399,7 +1399,7 @@ export const SliderData = [
     name: "Shmi Skywalker",
     height: 1.63,
     gender: "female",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Shmi_Skywalker_Lars",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/a/ad/ShmiSkywalkerDatabank_%28Repurposed%29.jpeg",
@@ -1424,7 +1424,7 @@ export const SliderData = [
     height: 1.75,
     mass: 80,
     gender: "male",
-    homeworld: "dathomir",
+    homeworld: "Dathomir",
     wiki: "http://starwars.wikia.com/wiki/Darth_Maul",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/5/50/Darth_Maul_profile.png",
@@ -1457,7 +1457,7 @@ export const SliderData = [
     name: "Bib Fortuna",
     height: 2,
     gender: "male",
-    homeworld: "ryloth",
+    homeworld: "Ryloth",
     wiki: "http://starwars.wikia.com/wiki/Bib_Fortuna",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/3/33/BibFortunaHS-ROTJ.png",
@@ -1480,7 +1480,7 @@ export const SliderData = [
     height: 1.7,
     mass: 55,
     gender: "female",
-    homeworld: "ryloth",
+    homeworld: "Ryloth",
     wiki: "http://starwars.wikia.com/wiki/Aayla_Secura/Legends",
     image: "https://vignette.wikia.nocookie.net/starwars/images/f/f9/Aayla.jpg",
     born: -48,
@@ -1509,7 +1509,7 @@ export const SliderData = [
     height: 0.79,
     mass: 15,
     gender: "male",
-    homeworld: "aleen",
+    homeworld: "Aleen",
     wiki: "http://starwars.wikia.com/wiki/Ratts_Tyerell",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/6/68/RattsHS.jpg",
@@ -1528,7 +1528,7 @@ export const SliderData = [
     height: 0.94,
     mass: 45,
     gender: "male",
-    homeworld: "vulpter",
+    homeworld: "Vulpter",
     wiki: "http://starwars.wikia.com/wiki/Dud_Bolt",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/73/Dud_Bolt_Podracer_Cockpit.png",
@@ -1544,11 +1544,11 @@ export const SliderData = [
     name: "Gasgano",
     height: 1.22,
     gender: "male",
-    homeworld: "troiken",
+    homeworld: "Troiken",
     wiki: "http://starwars.wikia.com/wiki/Gasgano",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/5/57/GasganoHS-SWE.jpg",
-    species: "xexto",
+    species: "Xexto",
     eyeColor: "black",
     skinColor: "white, brown, purple",
     affiliations: [],
@@ -1561,7 +1561,7 @@ export const SliderData = [
     height: 1.63,
     mass: 65,
     gender: "male",
-    homeworld: "tund",
+    homeworld: "Tund",
     wiki: "http://starwars.wikia.com/wiki/Ben_Quadinaros",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/7f/Cropped_Quadinaros.png",
@@ -1578,7 +1578,7 @@ export const SliderData = [
     height: 1.92,
     mass: 84,
     gender: "male",
-    homeworld: "haruun kal",
+    homeworld: "Haruun Kal",
     wiki: "http://starwars.wikia.com/wiki/Mace_Windu",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/5/58/Mace_ROTS.png",
@@ -1613,7 +1613,7 @@ export const SliderData = [
     height: 1.98,
     mass: 82,
     gender: "male",
-    homeworld: "cerea",
+    homeworld: "Cerea",
     wiki: "http://starwars.wikia.com/wiki/Ki-Adi-Mundi",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/9/9e/KiAdiMundi.jpg",
@@ -1646,7 +1646,7 @@ export const SliderData = [
     height: 1.96,
     mass: 87,
     gender: "male",
-    homeworld: "glee anselm",
+    homeworld: "Glee Anselm",
     wiki: "http://starwars.wikia.com/wiki/Kit_Fisto",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/4/4c/Kit_Fisto_Card_Trader.png",
@@ -1675,7 +1675,7 @@ export const SliderData = [
     name: "Eeth Koth",
     height: 1.71,
     gender: "male",
-    homeworld: "nar shaddaa",
+    homeworld: "Nar Shaddaa",
     wiki: "http://starwars.wikia.com/wiki/Eeth_Koth",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/4/4e/EethKothCardTrader.png",
@@ -1702,7 +1702,7 @@ export const SliderData = [
     height: 1.84,
     mass: 50,
     gender: "female",
-    homeworld: "coruscant",
+    homeworld: "Coruscant",
     wiki: "http://starwars.wikia.com/wiki/Adi_Gallia",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/b/ba/AdiGallia.jpg",
@@ -1730,7 +1730,7 @@ export const SliderData = [
     name: "Saesee Tiin",
     height: 1.93,
     gender: "male",
-    homeworld: "iktotch",
+    homeworld: "Iktotch",
     wiki: "http://starwars.wikia.com/wiki/Saesee_Tiin",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/6/68/Saesee_Tiin_Card_Trader.jpg",
@@ -1759,7 +1759,7 @@ export const SliderData = [
     name: "Yarael Poof",
     height: 2.64,
     gender: "male",
-    homeworld: "quermia",
+    homeworld: "Quermia",
     wiki: "http://starwars.wikia.com/wiki/Yarael_Poof",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/6/66/Yarael_Poof_Canon.jpeg",
@@ -1777,7 +1777,7 @@ export const SliderData = [
     height: 1.88,
     mass: 80,
     gender: "male",
-    homeworld: "dorin",
+    homeworld: "Dorin",
     wiki: "http://starwars.wikia.com/wiki/Plo_Koon",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/b/bf/PloKoonCardTrader.png",
@@ -1807,7 +1807,7 @@ export const SliderData = [
     name: "Mas Amedda",
     height: 1.96,
     gender: "male",
-    homeworld: "champala",
+    homeworld: "Champala",
     wiki: "http://starwars.wikia.com/wiki/Mas_Amedda",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/3/37/Mas_Amedda_SWCT.png",
@@ -1838,7 +1838,7 @@ export const SliderData = [
     height: 1.85,
     mass: 85,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Gregar_Typho",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/5/52/Gregar_Typho.jpg",
@@ -1863,7 +1863,7 @@ export const SliderData = [
     name: "Cordé",
     height: 1.57,
     gender: "female",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Cord%C3%A9",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/b/b6/Cord%C3%A9_-_SW_Card_Trader.png",
@@ -1886,7 +1886,7 @@ export const SliderData = [
     name: "Cliegg Lars",
     height: 1.83,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Cliegg_Lars",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/3/36/ClieggLarsHS-SWE.jpg",
@@ -1906,7 +1906,7 @@ export const SliderData = [
     height: 1.75,
     mass: 80,
     gender: "male",
-    homeworld: "geonosis",
+    homeworld: "Geonosis",
     wiki: "http://starwars.wikia.com/wiki/Poggle_the_Lesser",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/9/93/Poggle_the_lesser_-_sw_card_trader.png",
@@ -1936,7 +1936,7 @@ export const SliderData = [
     height: 1.76,
     mass: 56.2,
     gender: "female",
-    homeworld: "mirial",
+    homeworld: "Mirial",
     wiki: "http://starwars.wikia.com/wiki/Luminara_Unduli",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/2/21/LuminaraHS-SWE_%28new%29.png",
@@ -1961,7 +1961,7 @@ export const SliderData = [
     height: 1.66,
     mass: 50,
     gender: "female",
-    homeworld: "mirial",
+    homeworld: "Mirial",
     wiki: "http://starwars.wikia.com/wiki/Barriss_Offee",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/3/37/Barrisprofile2.jpg",
@@ -1990,7 +1990,7 @@ export const SliderData = [
     name: "Dormé",
     height: 1.65,
     gender: "female",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     wiki: "http://starwars.wikia.com/wiki/Dorm%C3%A9",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/1/18/Dormesenate.jpg",
@@ -2012,7 +2012,7 @@ export const SliderData = [
     height: 1.93,
     mass: 86,
     gender: "male",
-    homeworld: "serenno",
+    homeworld: "Serenno",
     wiki: "http://starwars.wikia.com/wiki/Dooku",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/b/b8/Dooku_Headshot.jpg",
@@ -2051,7 +2051,7 @@ export const SliderData = [
     name: "Bail Prestor Organa",
     height: 1.91,
     gender: "male",
-    homeworld: "alderaan",
+    homeworld: "Alderaan",
     wiki: "http://starwars.wikia.com/wiki/Bail_Prestor_Organa",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/5/50/Bail_Organa_Mug.jpg",
@@ -2099,7 +2099,7 @@ export const SliderData = [
     height: 1.83,
     mass: 79,
     gender: "male",
-    homeworld: "concord dawn",
+    homeworld: "Concord Dawn",
     wiki: "http://starwars.wikia.com/wiki/Jango_Fett",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/5/56/JangoInfobox.png",
@@ -2120,7 +2120,7 @@ export const SliderData = [
     height: 1.68,
     mass: 55,
     gender: "female",
-    homeworld: "zolan",
+    homeworld: "Zolan",
     wiki: "http://starwars.wikia.com/wiki/Zam_Wesell",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/7d/Clawdite.jpg",
@@ -2140,7 +2140,7 @@ export const SliderData = [
     height: 1.88,
     mass: 102,
     gender: "male",
-    homeworld: "ojom",
+    homeworld: "Ojom",
     wiki: "http://starwars.wikia.com/wiki/Dexter_Jettster",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/6/6c/DexterHS-SWE.jpg",
@@ -2158,7 +2158,7 @@ export const SliderData = [
     height: 2.29,
     mass: 88,
     gender: "male",
-    homeworld: "kamino",
+    homeworld: "Kamino",
     wiki: "http://starwars.wikia.com/wiki/Lama_Su",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/73/Lama_Su.jpg",
@@ -2178,7 +2178,7 @@ export const SliderData = [
     name: "Taun We",
     height: 2.13,
     gender: "female",
-    homeworld: "kamino",
+    homeworld: "Kamino",
     wiki: "http://starwars.wikia.com/wiki/Taun_We",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/9/9c/TaunWe.jpg",
@@ -2198,7 +2198,7 @@ export const SliderData = [
     name: "Jocasta Nu",
     height: 1.69,
     gender: "female",
-    homeworld: "coruscant",
+    homeworld: "Coruscant",
     wiki: "http://starwars.wikia.com/wiki/Jocasta_Nu",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/1/15/Jocasta_Nu_SWE.png",
@@ -2248,7 +2248,7 @@ export const SliderData = [
     height: 1.98,
     mass: 48,
     gender: "male",
-    homeworld: "skako",
+    homeworld: "Skako",
     wiki: "http://starwars.wikia.com/wiki/Wat_Tambor",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/a/a5/Wat_Tambor.png",
@@ -2275,7 +2275,7 @@ export const SliderData = [
     name: "San Hill",
     height: 1.91,
     gender: "male",
-    homeworld: "scipio",
+    homeworld: "Scipio",
     wiki: "http://starwars.wikia.com/wiki/San_Hill",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/6/6f/SanHill_hs.jpg",
@@ -2302,7 +2302,7 @@ export const SliderData = [
     height: 1.87,
     mass: 57,
     gender: "female",
-    homeworld: "shili",
+    homeworld: "Shili",
     wiki: "http://starwars.wikia.com/wiki/Shaak_Ti",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/2/20/Shaak_Ti_closeup-SWE.png",
@@ -2332,7 +2332,7 @@ export const SliderData = [
     height: 2.16,
     mass: 159,
     gender: "male",
-    homeworld: "kalee",
+    homeworld: "Kalee",
     wiki: "http://starwars.wikia.com/wiki/Grievous",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/d/de/Grievoushead.jpg",
@@ -2360,7 +2360,7 @@ export const SliderData = [
     height: 2.32,
     mass: 136,
     gender: "male",
-    homeworld: "kashyyyk",
+    homeworld: "Kashyyyk",
     wiki: "http://starwars.wikia.com/wiki/Tarfful",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/3/37/Tarfful_RotS.png",
@@ -2381,7 +2381,7 @@ export const SliderData = [
     height: 1.88,
     mass: 79,
     gender: "male",
-    homeworld: "alderaan",
+    homeworld: "Alderaan",
     wiki: "http://starwars.wikia.com/wiki/Raymus_Antilles",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/8/80/Raymus_card_trader.png",
@@ -2408,7 +2408,7 @@ export const SliderData = [
     height: 1.78,
     mass: 48,
     gender: "female",
-    homeworld: "umbara",
+    homeworld: "Umbara",
     wiki: "http://starwars.wikia.com/wiki/Sly_Moore",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/e/ec/SlyMooreIsWatchingYouPoop-OfficialPix.jpg",
@@ -2432,7 +2432,7 @@ export const SliderData = [
     height: 2.06,
     mass: 80,
     gender: "male",
-    homeworld: "utapau",
+    homeworld: "Utapau",
     wiki: "http://starwars.wikia.com/wiki/Tion_Medon",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/4/43/Tion_Medon.jpg",
@@ -2472,7 +2472,7 @@ export const SliderData = [
     height: 1.7,
     mass: 54,
     gender: "female",
-    homeworld: "jakku",
+    homeworld: "Jakku",
     wiki: "http://starwars.wikia.com/wiki/Rey",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/f/f8/ReyTLJEntertainmentWeeklyNovember.png",
@@ -2497,7 +2497,7 @@ export const SliderData = [
     height: 1.72,
     mass: 80,
     gender: "male",
-    homeworld: "yavin 4",
+    homeworld: "Yavin 4",
     wiki: "http://starwars.wikia.com/wiki/Poe_Dameron",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/7/79/Poe_Dameron_TLJ.png",
