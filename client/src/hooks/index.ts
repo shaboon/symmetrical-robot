@@ -1,3 +1,3 @@
-import { useGetWatchlist, useAddMovieToWatchlist } from "./watchlists";
+import { useGetWatchlist } from "./watchlists";
 
-export { useGetWatchlist, useAddMovieToWatchlist };
+export { useGetWatchlist };

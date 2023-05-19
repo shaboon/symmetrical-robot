@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "./Carousel/Carousel";
 import { SliderData } from "./Carousel/CharacterData";
 import "./Characters.css";
 import { useMutation } from "@apollo/client";
 import { ADD_TO_WATCHLIST } from "../../components/utils/mutations";
-import {
-  useGetWatchlist,
-  useAddMovieToWatchlist,
-} from "../../hooks/watchlists";
+import { useGetWatchlist } from "../../hooks/watchlists";
 
 export default function Contact() {
   const [info, setInfo] = useState(SliderData[0]);
@@ -28,7 +25,6 @@ export default function Contact() {
       setInfo(JSON.parse(slide));
     }
   }
-  console.log(data[0]?.name);
 
   const options: any[] = [];
 
@@ -36,18 +32,22 @@ export default function Contact() {
     options.push(item.name);
   });
 
-  const [movie, setMovie] = useState(info.appearances);
+  const [movie, setMovie] = useState(info.appearances[0]);
   const [watchList, setWatchList] = useState(options[0]);
 
+  useEffect(() => {
+    setWatchList(options[0]);
+  }, [data]);
   const [addWatchList] = useMutation(ADD_TO_WATCHLIST);
 
   async function addToWatchList(e) {
     e.preventDefault();
+    console.log("watchlist", watchList);
 
     try {
       const { data } = await addWatchList({
         variables: {
-          name: name,
+          name: watchList,
           title: [movie],
         },
       });

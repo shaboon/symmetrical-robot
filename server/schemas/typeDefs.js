@@ -63,10 +63,14 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addWatchList(title: String!, movies: [String]!, username: String!): WatchList
-    removeWatchList(watchListId: ID!): WatchList
-    updateWatchList(watchListId: ID!, title: String!, movies: [String]!, username: String!): WatchList
-    addMovieToWatchList(watchListId: ID!, title: String!): WatchList
+    addWatchList(
+      title: String!
+      movies: [String]!
+      username: String!
+    ): WatchList
+    removeWatchList(name: String!, title: [String]!): WatchList
+    updateWatchList(name: String!, title: [String]!): WatchList
+    addMovieToWatchList(name: String!, title: [String]!): WatchList
     addProfile(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
   }

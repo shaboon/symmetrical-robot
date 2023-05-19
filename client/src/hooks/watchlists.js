@@ -10,28 +10,4 @@ function useGetWatchlist() {
   return { loading, data: data?.watchLists || [] };
 }
 
-function useAddMovieToWatchlist() {
-  const [addMovieToWatchList] = useMutation(ADD_MOVIE_TO_WATCHLIST, {
-    update(cache, { data: { addMovieToWatchList } }) {
-      cache.modify({
-        fields: {
-          watchLists(existingWatchLists = []) {
-            const newWatchListRef = cache.writeFragment({
-              data: addMovieToWatchList,
-              fragment: gql`
-                fragment NewWatchList on WatchList {
-                  _id
-                  name
-                  title
-                }
-              `,
-            });
-            return [...existingWatchLists, newWatchListRef];
-          },
-        },
-      });
-    },
-  });
-}
-
-export { useGetWatchlist, useAddMovieToWatchlist };
+export { useGetWatchlist };
