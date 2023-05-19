@@ -104,7 +104,8 @@ const resolvers = {
       if (context.user) {
         const updatedWatchList = await WatchList.findOneAndUpdate(
           { name: name, title: title },
-          { new: false }
+          { movies },
+          { new: true }
         );
         return updatedWatchList;
       }
