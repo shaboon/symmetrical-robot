@@ -46,46 +46,29 @@ const typeDefs = gql`
     equipment: String
   }
 
-  type watchList {
-       _id: ID
-       name: String
-       title: [String]
-     }
+  type WatchList {
+    _id: ID
+    name: String
+    title: [String]
+  }
 
   type Query {
     profiles: [Profile]!
     profile(profileId: ID!): Profile
-    watchLists: [watchList]!
-    watchList(watchListId: ID!): watchList
+    watchLists: [WatchList]!
+    watchList(watchListId: ID!): WatchList
     me: Profile
     characters: [Character]!
-  }
-
-  type Query {
-    watchLists(username: String): [watchList]
-    watchList(watchListId: ID!): watchList
+    watchListsByUsername(username: String): [WatchList]
   }
 
   type Mutation {
-    addWatchList(title: String!,
-      movies: [String]!,
-      username: String!): watchList
-    removeWatchList(watchListId: ID!): watchList
-    updateWatchList(watchListId: ID!,
-      title: String!,
-      movies: [String]!,
-      username: String!): watchList
-  }
-
-  type Mutation {
+    addWatchList(title: String!, movies: [String]!, username: String!): WatchList
+    removeWatchList(watchListId: ID!): WatchList
+    updateWatchList(watchListId: ID!, title: String!, movies: [String]!, username: String!): WatchList
     addProfile(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
-
-
   }
-
-  
-
 `;
 
 module.exports = typeDefs;
