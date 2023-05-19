@@ -68,7 +68,7 @@ const resolvers = {
       return { token, profile };
     },
 
-    addWatchList: async (parent, args, context) => {
+    addWatchList: async (parent, { title, movies }, context) => {
       if (context.user) {
         const watchList = await WatchList.create({
           title,
@@ -100,11 +100,11 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    updateWatchList: async (parent, { watchListId, rating }, context) => {
+    updateWatchList: async (parent, { watchListId, movies }, context) => {
       if (context.user) {
         const updatedWatchList = await WatchList.findOneAndUpdate(
           { _id: watchListId, username: context.user.username },
-          { $push: { watchLists: updatedWatchList._id } },
+          { movies },
           { new: true }
         );
         return updatedWatchList;
