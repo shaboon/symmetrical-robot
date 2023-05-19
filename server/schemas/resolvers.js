@@ -1,4 +1,4 @@
-const { AuthenticationError } = require("apollo-server-express");
+const { AuthenticationError, ApolloError } = require("apollo-server-express");
 const { Profile } = require("../models");
 const { Character } = require("../models");
 const { WatchList } = require("../models");
@@ -68,25 +68,33 @@ const resolvers = {
       return { token, profile };
     },
 
-    addWatchList: async (parent, { name, title }, context) => {
+    addWatchList: async (parent, data, context) => {
+      console.log(data);
       if (context.user) {
-        const watchList = await WatchList.create({
-          name,
-          title,
-        });
-        return watchList;
+        try {
+          const watchList = await WatchList.create({ ...data, title: [] });
+          return watchList;
+        } catch (error) {
+          console.log(error);
+          throw new ApolloError(error);
+        }
       }
       throw new AuthenticationError("You need to be logged in!");
     },
 
     addToWatchList: async (parent, { name, title }, context) => {
       if (context.user) {
-        const updatedWatchList = await WatchList.findOneAndUpdate(
-          { name: name },
-          { $push: { title: title } },
-          { new: false }
-        );
-        return updatedWatchList;
+        try {
+          const updatedWatchList = await WatchList.findOneAndUpdate(
+            { name: name },
+            { $push: { title: title } },
+            { new: false }
+          );
+          return updatedWatchList;
+        } catch (error) {
+          console.log(error);
+          throw new ApolloError(error);
+        }
       }
       throw new AuthenticationError("You need to be logged in!");
     },

@@ -15,8 +15,8 @@ db.once("open", async () => {
     await Character.insertMany(characterSeeds);
 
     // Delete all existing documents in the WatchList collection and insert new ones
-    // await WatchList.deleteMany({});
-    // await WatchList.insertMany(watchListSeeds);
+    await WatchList.deleteMany({});
+    await WatchList.insertMany(watchListSeeds);
 
     process.exit(0);
   } catch (err) {
