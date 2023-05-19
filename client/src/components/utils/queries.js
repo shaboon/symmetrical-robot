@@ -43,8 +43,18 @@ export const QUERY_CHARACTERS = gql`
 `;
 
 export const QUERY_WATCHLIST = gql`
-  query GetWatchlist {
+  query getWatchLists {
     watchLists {
+      _id
+      name
+      title
+    }
+  }
+`;
+
+export const ADD_MOVIE_TO_WATCHLIST = gql`
+  mutation addMovieToWatchList($watchListId: ID!, $title: String!) {
+    addMovieToWatchList(watchListId: $watchListId, title: $title) {
       _id
       name
       title

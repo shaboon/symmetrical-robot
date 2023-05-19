@@ -66,6 +66,7 @@ const typeDefs = gql`
     addWatchList(title: String!, movies: [String]!, username: String!): WatchList
     removeWatchList(watchListId: ID!): WatchList
     updateWatchList(watchListId: ID!, title: String!, movies: [String]!, username: String!): WatchList
+    addMovieToWatchList(watchListId: ID!, title: String!): WatchList
     addProfile(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
   }
