@@ -68,38 +68,50 @@ const resolvers = {
       return { token, profile };
     },
 
-    addWatchList: async (parent, { title, movies }, context) => {
+    addWatchList: async (parent, { name, title }, context) => {
       if (context.user) {
         const watchList = await WatchList.create({
+          name,
           title,
-          movies,
-          username: context.user.username,
         });
-        await Profile.findByIdAndUpdate(
-          { _id: context.user._id },
-          { $push: { watchLists: watchList._id } },
-          { new: true }
-        );
         return watchList;
       }
       throw new AuthenticationError("You need to be logged in!");
     },
 
-    removeWatchList: async (parent, { watchListId }, context) => {
+    addToWatchList: async (parent, { name, title }, context) => {
+      if (context.user) {
+        const updatedWatchList = await WatchList.findOneAndUpdate(
+          { name: name },
+          { $push: { title: title } },
+          { new: false }
+        );
+        return updatedWatchList;
+      }
+      throw new AuthenticationError("You need to be logged in!");
+    },
+
+    removeWatchList: async (parent, { name }, context) => {
       if (context.user) {
         const watchList = await WatchList.findOneAndDelete({
-          _id: watchListId,
-          username: context.user.username,
+          name: name,
         });
-        await Profile.findByIdAndUpdate(
-          { _id: context.user._id },
-          { $pull: { watchLists: watchList._id } },
-          { new: true }
-        );
         return watchList;
       }
       throw new AuthenticationError("You need to be logged in!");
     },
+    removeFromWatchList: async (parent, { name, title }, context) => {
+      if (context.user) {
+        const updatedWatchList = await WatchList.findOneAndUpdate(
+          { name: name },
+          { $pull: { title: title } },
+          { new: true }
+        );
+        return updatedWatchList;
+      }
+      throw new AuthenticationError("You need to be logged in!");
+    },
+
     updateWatchList: async (parent, { name, title }, context) => {
       if (context.user) {
         const updatedWatchList = await WatchList.findOneAndUpdate(

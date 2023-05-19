@@ -34,11 +34,40 @@ export const DELETE_MOVIE_MUTATION = gql`
 `;
 
 export const ADD_TO_WATCHLIST = gql`
-  mutation updateWatchList($name: String!, $title: [String]!) {
-    updateWatchList(name: $name, title: $title) {
+  mutation addToWatchList($name: String!, $title: String!) {
+    addToWatchList(name: $name, title: $title) {
       _id
       name
       title
+    }
+  }
+`;
+
+export const REMOVE_FROM_WATCHLIST = gql`
+  mutation removeFromWatchList($name: String!, $title: String!) {
+    removeFromWatchList(name: $name) {
+      _id
+      name
+      title
+    }
+  }
+`;
+
+export const CREATE_WATCHLIST = gql`
+  mutation addWatchList($name: String!, $title: [String]) {
+    addWatchList(name: $name, title: $title) {
+      _id
+      name
+      title
+    }
+  }
+`;
+
+export const REMOVE_WATCHLIST = gql`
+  mutation removeWatchList($name: String!) {
+    removeWatchList(name: $name) {
+      _id
+      name
     }
   }
 `;

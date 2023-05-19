@@ -1,17 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useMutation } from "@apollo/client";
+import { REMOVE_FROM_WATCHLIST, REMOVE_WATCHLIST } from "../utils/mutations";
 
 type Props = {
   watchLists: any[],
+  loading: boolean;
 };
 
 
 // Had to convert to tsx due to issues with non-mapping of props
-export default function WatchLists({ watchLists }: Props) {
-  function deleteMovie(movie) {
+function WatchLists({ watchLists}: Props) {
+  const [removeFromWatchList] = useMutation(REMOVE_FROM_WATCHLIST);
+  const [removeWatchList] = useMutation(REMOVE_WATCHLIST);
+    
+  async function deleteFromWatchList(e, title, list) {
+   e.preventDefault();
+      try {
+        const { data } = await removeFromWatchList({
+          variables: {
+            name: list,
+            title: title,
+          },
+        });
+        
+      } catch (error) {
+        console.error("Error deleting from watchlist:", error);
+      }
+ 
+    }
 
-  }
-
-  function deleteList(list) {
+  async function deleteList(e, list) {
+    try {
+      const { data } = await removeWatchList({
+        variables: {
+          name: list,
+        },
+      });
+    } catch (error) {
+      console.error("Error removing from watchlist:", error);
+    }
   }
   return watchLists.map((list, index) => {
     return (
@@ -22,13 +49,14 @@ export default function WatchLists({ watchLists }: Props) {
             <div className="list col-12 row" key={index}>
               <ul className="col-8 row">
                 {list.title.map((title, index) => {
+                  console.log(`List Name`, list.name)
                   return (
                     <li key={index} className="col-12">
                       <div className="container col-12 row justify-content-center list-head">
                         <button
                           value={title}
                           className="col-1 d-flex justify-content-center btn btn-danger delete"
-                          onClick={() => deleteMovie(title)}
+                          onClick={(e)=> deleteFromWatchList(e, title, list.name)}
                         >
                           X
                         </button>
@@ -42,7 +70,7 @@ export default function WatchLists({ watchLists }: Props) {
                 <button
                   value={list.name}
                   className="col-12 btn btn-danger"
-                  onClick={() => deleteList(list.name)}
+                  onClick={(e) => deleteList(e, list.name)}
                 >
                   Delete WatchList
                 </button>
@@ -54,3 +82,5 @@ export default function WatchLists({ watchLists }: Props) {
     );
   });
 }
+
+export default React.memo(WatchLists)
