@@ -7,11 +7,11 @@ const watchListSchema = new Schema({
     unique: true,
     trim: true,
   },
-  title: {
-    sparse: true,
-    type: Array,
-    default: [],
-  },
+  title: [
+    {
+      type: String,
+    },
+  ],
 });
 
 const WatchList = model("WatchList", watchListSchema);

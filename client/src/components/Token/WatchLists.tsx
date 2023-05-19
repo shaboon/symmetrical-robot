@@ -4,15 +4,19 @@ import { REMOVE_FROM_WATCHLIST, REMOVE_WATCHLIST } from "../utils/mutations";
 
 type Props = {
   watchLists: any[],
+  setCurrentList: any,
   loading: boolean;
 };
 
 
 // Had to convert to tsx due to issues with non-mapping of props
-function WatchLists({ watchLists}: Props) {
+function WatchLists({ watchLists, setCurrentList}: Props) {
+
   const [removeFromWatchList] = useMutation(REMOVE_FROM_WATCHLIST);
   const [removeWatchList] = useMutation(REMOVE_WATCHLIST);
     
+  console.log(watchLists);
+
   async function deleteFromWatchList(e, title, list) {
    e.preventDefault();
       try {
@@ -36,6 +40,9 @@ function WatchLists({ watchLists}: Props) {
           name: list,
         },
       });
+      const filtered = watchLists.filter(l=> l.name !== list);
+      console.log(filtered)
+      setCurrentList(filtered);
     } catch (error) {
       console.error("Error removing from watchlist:", error);
     }
@@ -47,7 +54,7 @@ function WatchLists({ watchLists}: Props) {
           <div className="col-12">
             <h1 className="col-12 row">{list.name}</h1>
             <div className="list col-12 row" key={index}>
-              <ul className="col-8 row">
+              <ul className="col-8 row pb-4 mb-4">
                 {list.title.map((title, index) => {
                   console.log(`List Name`, list.name)
                   return (

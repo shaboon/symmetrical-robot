@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Request from "../../components/Token/Request";
 import WatchLists from "../../components/Token/WatchLists.tsx";
@@ -12,21 +12,31 @@ import "./List.css";
 function Lists() {
   const [newList, setNewList] = useState("");
 
+  const [currentList, setCurrentList] = useState([]);
+
   const { data, loading } = useGetWatchlist();
   const [createWatchlist] = useMutation(CREATE_WATCHLIST);
 
+  useEffect(() => {
+    if (data && !loading) {
+      setCurrentList(data);
+    }
+  }, [data, loading]);
+
+  console.log(currentList);
   async function createList(e) {
+    e.preventDefault();
     if (newList.trim() === "") {
       return alert("No List Name");
     }
     try {
-      const { data } = await createWatchlist({
+      const created = await createWatchlist({
         variables: {
           name: newList,
-          title: [],
         },
       });
-      this.forceUpdate();
+      setCurrentList([...currentList, created.data.addWatchList]);
+      //console.log(created);
     } catch (error) {
       console.error("Error creating a watchlist:", error);
     }
@@ -56,7 +66,13 @@ function Lists() {
             ></input>
           </form>
         </div>
-        <WatchLists watchLists={data} loading={loading} />
+        {currentList && (
+          <WatchLists
+            watchLists={currentList}
+            loading={loading}
+            setCurrentList={setCurrentList}
+          />
+        )}
       </div>
     );
   } else {
