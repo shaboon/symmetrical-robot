@@ -9,7 +9,7 @@ export const SliderData = [
     height: 1.72,
     mass: 73,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Luke_Skywalker",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg",
@@ -62,7 +62,7 @@ export const SliderData = [
     height: 1.71,
     mass: 75,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     species: "Droid",
     wiki: "http://starwars.wikia.com/wiki/C-3PO",
     image:
@@ -117,7 +117,7 @@ export const SliderData = [
     height: 1.09,
     mass: 32,
     gender: "male",
-    homeworld: "naboo",
+    homeworld: "Naboo",
     species: "Droid",
     wiki: "http://starwars.wikia.com/wiki/R2-D2",
     image:
@@ -185,7 +185,7 @@ export const SliderData = [
     height: 2.03,
     mass: 120,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Anakin_Skywalker",
     image:
       "https://vignette.wikia.nocookie.net/fr.starwars/images/3/32/Dark_Vador.jpg",
@@ -232,7 +232,7 @@ export const SliderData = [
     height: 1.5,
     mass: 51,
     gender: "female",
-    homeworld: "alderaan",
+    homeworld: "Alderaan",
     wiki: "http://starwars.wikia.com/wiki/Leia_Organa",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/f/fc/Leia_Organa_TLJ.png",
@@ -280,7 +280,7 @@ export const SliderData = [
     height: 1.7,
     mass: 120,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Owen_Lars",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/e/eb/OwenCardTrader.png",
@@ -306,7 +306,7 @@ export const SliderData = [
     height: 1.65,
     mass: 75,
     gender: "female",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Beru_Whitesun_Lars",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/c/cc/BeruCardTrader.png",
@@ -332,7 +332,7 @@ export const SliderData = [
     height: 0.97,
     mass: 32,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     species: "Droid",
     wiki: "http://starwars.wikia.com/wiki/R5-D4",
     image:
@@ -359,7 +359,7 @@ export const SliderData = [
     height: 1.83,
     mass: 84,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Biggs_Darklighter",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/0/00/BiggsHS-ANH.png",
@@ -386,7 +386,7 @@ export const SliderData = [
     height: 1.82,
     mass: 81,
     gender: "male",
-    homeworld: "stewjon",
+    homeworld: "Stewjon",
     wiki: "http://starwars.wikia.com/wiki/Obi-Wan_Kenobi",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/4/4e/ObiWanHS-SWE.jpg",
@@ -425,7 +425,7 @@ export const SliderData = [
     height: 2.03,
     mass: 120,
     gender: "male",
-    homeworld: "tatooine",
+    homeworld: "Tatooine",
     wiki: "http://starwars.wikia.com/wiki/Anakin_Skywalker",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/6/6f/Anakin_Skywalker_RotS.png",
@@ -477,7 +477,7 @@ export const SliderData = [
     name: "Wilhuff Tarkin",
     height: 1.82,
     gender: "male",
-    homeworld: "eriadu",
+    homeworld: "Eriadu",
     wiki: "http://starwars.wikia.com/wiki/Wilhuff_Tarkin",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/c/c1/Tarkininfobox.jpg",
@@ -2565,7 +2565,7 @@ export const SliderData = [
     height: 2.0,
     mass: 76,
     gender: "female",
-    homeworld: "parnassos",
+    homeworld: "Parnassos",
     wiki: "http://starwars.wikia.com/wiki/Phasma",
     image:
       "https://vignette.wikia.nocookie.net/starwars/images/0/02/Phasma.png",
@@ -2633,7 +2633,7 @@ export const SliderData = [
     name: "Ahsoka Tano",
     height: 1.76,
     gender: "female",
-    homeworld: "shili",
+    homeworld: "Shili",
     wiki: "https://starwars.fandom.com/wiki/Ahsoka_Tano",
     image:
       "https://static.wikia.nocookie.net/starwars/images/1/12/AhsokaTano-AG.png/",
@@ -2663,7 +2663,7 @@ export const SliderData = [
     name: "Rex",
     height: 1.83,
     gender: "male",
-    homeworld: "kamino",
+    homeworld: "Kamino",
     wiki: "https://starwars.fandom.com/wiki/Rex",
     image:
       "https://static.wikia.nocookie.net/starwars/images/8/89/Captain_Rex_old.png",
@@ -2690,7 +2690,7 @@ export const SliderData = [
     name: "K-2SO",
     height: 2.16,
     gender: "masculine programming",
-    homeworld: "vulpter",
+    homeworld: "Vulpter",
     species: "Droid",
     wiki: "https://starwars.fandom.com/wiki/K-2SO",
     image:
@@ -2713,7 +2713,7 @@ export const SliderData = [
     name: "Jyn Erso",
     height: 1.6,
     gender: "female",
-    homeworld: "vallt",
+    homeworld: "Vallt",
     wiki: "https://starwars.fandom.com/wiki/Jyn_Erso",
     image:
       "https://static.wikia.nocookie.net/starwars/images/b/b3/JynErsoPromo.png",
@@ -2741,7 +2741,7 @@ export const SliderData = [
     height: 1.89,
     mass: 89,
     gender: "male",
-    homeworld: "chandrila",
+    homeworld: "Chandrila",
     wiki: "https://starwars.fandom.com/wiki/Ben_Solo",
     image:
       "https://static.wikia.nocookie.net/starwars/images/b/bc/KyloRenVFcover-TROS.png",
@@ -2773,7 +2773,7 @@ export const SliderData = [
     height: 1.85,
     mass: 75,
     gender: "male",
-    homeworld: "duro",
+    homeworld: "Duro",
     wiki: "https://starwars.fandom.com/wiki/Cad_Bane",
     image:
       "https://static.wikia.nocookie.net/starwars/images/9/97/CadBane-AG.png/",
@@ -2804,7 +2804,7 @@ export const SliderData = [
     name: "Bo-Katan Kryze",
     height: 1.8,
     gender: "female",
-    homeworld: "kalevala",
+    homeworld: "Kalevala",
     wiki: "https://starwars.fandom.com/wiki/Bo-Katan_Kryze",
     image:
       "https://static.wikia.nocookie.net/starwars/images/d/d6/BoKatanKryze-TMs3.png",
@@ -2850,7 +2850,7 @@ export const SliderData = [
     name: "IG-11",
     height: 1.71,
     gender: "masculine programming",
-    homeworld: "arvala-7",
+    homeworld: "Arvala-7",
     species: "Droid",
     wiki: "https://starwars.fandom.com/wiki/IG-11",
     image:
@@ -2869,7 +2869,7 @@ export const SliderData = [
     name: "Saw Gerrera",
     height: 1.8,
     gender: "male",
-    homeworld: "onderon",
+    homeworld: "Onderon",
     wiki: "https://starwars.fandom.com/wiki/Saw_Gerrera",
     image:
       "https://static.wikia.nocookie.net/starwars/images/f/fe/Saw_Gerrera_Rogue_One.png",
