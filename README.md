@@ -35,11 +35,10 @@ After creating their tailored watchlist, users will have access to additional in
 ## License
 The Interstellar Index is licensed under the MIT License. You are free to use, modify, and distribute the app as you see fit, as long as you include the original license and copyright notices.
 
-## Technoloiges
-
-## Badges
-
-## Features
+## Technologies
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Swag](http://ForTheBadge.com/images/badges/built-with-swag.svg)
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 
 
