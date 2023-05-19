@@ -52,9 +52,13 @@ export default function Contact() {
 
   return (
     <div className="container justify-content-center my-5">
-      <div className="col-12 row bg-secondary rounded">
+      <div className="col-12 row bg-secondary py-3 rounded">
         <div className="col-12 col-md-4 row">
-          <img src={image} className="col-8 mx-auto my-auto upper-image" alt="Character" />
+          <img
+            src={image}
+            className="col-8 mx-auto my-auto upper-image"
+            alt="Character"
+          />
         </div>
         <div className="col-12 col-md-4 my-auto row">
           <div className="info info-name">{name}</div>
