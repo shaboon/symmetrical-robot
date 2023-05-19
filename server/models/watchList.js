@@ -1,13 +1,13 @@
 const { Schema, model } = require("mongoose");
 
 const watchListSchema = new Schema({
-  title: {
+  name: {
     type: String,
     required: true,
     unique: true,
     trim: true,
   },
-  movies: {
+  title: {
     type: Array,
     default: [],
   },
