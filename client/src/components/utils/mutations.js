@@ -29,7 +29,6 @@ export const DELETE_MOVIE_MUTATION = gql`
     deleteMovie(movieId: $movieId) {
       _id
       title
-      }
     }
   }
 `;
