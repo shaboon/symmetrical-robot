@@ -100,10 +100,10 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    updateWatchList: async (parent, { watchListId, movies }, context) => {
+    updateWatchList: async (parent, { name, title }, context) => {
       if (context.user) {
         const updatedWatchList = await WatchList.findOneAndUpdate(
-          { _id: watchListId, username: context.user.username },
+          { name: name, title: title },
           { movies },
           { new: true }
         );

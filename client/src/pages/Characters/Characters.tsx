@@ -4,6 +4,7 @@ import { SliderData } from "./Carousel/CharacterData";
 import "./Characters.css";
 import { useMutation } from "@apollo/client";
 import { ADD_TO_WATCHLIST } from "../../components/utils/mutations";
+
 import {
   useGetWatchlist,
   useAddMovieToWatchlist,
