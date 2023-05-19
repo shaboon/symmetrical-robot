@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Carousel from "./Carousel/Carousel";
 import { SliderData } from "./Carousel/CharacterData";
 import "./Characters.css";
+import { useMutation } from "@apollo/client";
+import { ADD_TO_WATCHLIST } from "../../components/utils/mutations";
 
 export default function Contact() {
   const [info, setInfo] = useState(SliderData[0]);
@@ -28,19 +30,31 @@ export default function Contact() {
   const [movie, setMovie] = useState(info.appearances);
   const [watchList, setWatchList] = useState(options[0]);
 
-  function addToWatchList(e) {
+  const [addWatchList] = useMutation(ADD_TO_WATCHLIST);
+
+  async function addToWatchList(e) {
     e.preventDefault();
 
-    console.log("Add to WatchList button clicked");
-    console.log(movie);
-    console.log(watchList);
+    try {
+      const { data } = await addWatchList({
+        variables: {
+          title: name,
+          movies: [movie],
+          username: watchList,
+        },
+      });
+
+      console.log("Added to watchlist:", data.addWatchList);
+    } catch (error) {
+      console.error("Error adding to watchlist:", error);
+    }
   }
 
   return (
     <div className="container justify-content-center my-5">
       <div className="col-12 row bg-secondary rounded">
         <div className="col-12 col-md-4 row">
-          <img src={image} className="col-8 mx-auto my-auto upper-image" />
+          <img src={image} className="col-8 mx-auto my-auto upper-image" alt="Character" />
         </div>
         <div className="col-12 col-md-4 my-auto row">
           <div className="info info-name">{name}</div>
@@ -83,7 +97,6 @@ export default function Contact() {
                     {list}
                   </option>
                 ))}
-                {console.log(options)}
               </select>
             </label>
             <button
