@@ -34,12 +34,12 @@ const resolvers = {
     },
 
     watchList: async () => {
-      return WatchListData.find();
+      return WatchList.find();
     },
 
     // watchLists: async (parent, { username }) => {
     //   const params = username ? { username } : {};
-    //   return WatchListData.find(params).sort({ createdAt: -1 });
+    //   return WatchList.find(params).sort({ createdAt: -1 });
     // }
   },
 
@@ -70,7 +70,7 @@ const resolvers = {
 
     addWatchList: async (parent, args, context) => {
       if (context.user) {
-        const watchList = await WatchListData.create({
+        const watchList = await WatchList.create({
           title,
           movies,
           username: context.user.username,
@@ -87,7 +87,7 @@ const resolvers = {
 
     removeWatchList: async (parent, { watchListId }, context) => {
       if (context.user) {
-        const watchList = await WatchListData.findOneAndDelete({
+        const watchList = await WatchList.findOneAndDelete({
           _id: watchListId,
           username: context.user.username,
         });
@@ -102,7 +102,7 @@ const resolvers = {
     },
     updateWatchList: async (parent, { watchListId, rating }, context) => {
       if (context.user) {
-        const updatedWatchList = await WatchListData.findOneAndUpdate(
+        const updatedWatchList = await WatchList.findOneAndUpdate(
           { _id: watchListId, username: context.user.username },
           { $push: { watchLists: updatedWatchList._id } },
           { new: true }
