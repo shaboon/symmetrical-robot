@@ -10,10 +10,11 @@ Given the abundance of content emerging from the Star Wars universe in recent ti
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Screenshot](#screenshot)
 - [License](#license)
 
 ## Installation
-TBD
+Application is deployed live through Heroku and ready for use.
 
 ## Usage
 When the app is launched, users will be greeted by an engaging home page offering multiple options to explore. They can dive right in and start browsing Star Wars characters, or if they've had their fill of Star Wars content, they can unwind and enjoy our built-in game! However, before getting started, users need to log in to access all features, including the ability to create a personalized watchlist.
@@ -27,12 +28,19 @@ After creating their tailored watchlist, users will have access to additional in
 <br>Sean Haboon - [GitHub Profile](https://github.com/shaboon)</br>
 <br>Sean Holian - [GitHub Profile](https://github.com/seannoway)</br>
 
+## Screenshot
+[Screenshot of deployed application](./client/public/interstellar-index.herokuapp.com_.png)
+
+
 ## License
+The Interstellar Index is licensed under the MIT License. You are free to use, modify, and distribute the app as you see fit, as long as you include the original license and copyright notices.
+
+## Technoloiges
 
 ## Badges
 
 ## Features
 
-## Tests
+
 
 
