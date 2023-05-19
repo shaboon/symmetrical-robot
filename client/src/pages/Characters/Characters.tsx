@@ -4,7 +4,10 @@ import { SliderData } from "./Carousel/CharacterData";
 import "./Characters.css";
 import { useMutation } from "@apollo/client";
 import { ADD_TO_WATCHLIST } from "../../components/utils/mutations";
-import { useGetWatchlist, useAddMovieToWatchlist } from "../../hooks/watchlists.js";
+import {
+  useGetWatchlist,
+  useAddMovieToWatchlist,
+} from "../../hooks/watchlists";
 
 export default function Contact() {
   const [info, setInfo] = useState(SliderData[0]);
