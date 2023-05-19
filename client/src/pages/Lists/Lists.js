@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useMutation, useQuery } from "@apollo/client";
-import { ADD_MOVIE_TO_WATCHLIST, QUERY_WATCHLISTS } from "../utils/queries";
+import { useMutation, useQuery, gql } from "@apollo/client";
+import { ADD_MOVIE_TO_WATCHLIST, QUERY_WATCHLIST } from "../../components/utils/queries";
 
 import Request from "../../components/Token/Request";
 import WatchLists from "../../components/Token/WatchLists";
@@ -12,7 +12,7 @@ import "./List.css";
 export default function Lists() {
   const [newList, setNewList] = useState("");
 
-  const { loading, data } = useQuery(QUERY_WATCHLISTS);
+  const { loading, data } = useQuery(QUERY_WATCHLIST);
 
   const [addMovieToWatchList] = useMutation(ADD_MOVIE_TO_WATCHLIST, {
     update(cache, { data: { addMovieToWatchList } }) {
@@ -27,13 +27,13 @@ export default function Lists() {
                   name
                   title
                 }
-              `,
+              `
             });
             return [...existingWatchLists, newWatchListRef];
-          },
-        },
+          }
+        }
       });
-    },
+    }
   });
 
   function createList(e) {
