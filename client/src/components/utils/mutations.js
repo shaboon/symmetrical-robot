@@ -45,7 +45,7 @@ export const ADD_TO_WATCHLIST = gql`
 
 export const REMOVE_FROM_WATCHLIST = gql`
   mutation removeFromWatchList($name: String!, $title: String!) {
-    removeFromWatchList(name: $name) {
+    removeFromWatchList(name: $name, title: $title) {
       _id
       name
       title
