@@ -4,10 +4,14 @@ import { SliderData } from "./Carousel/CharacterData";
 import "./Characters.css";
 import { useMutation } from "@apollo/client";
 import { ADD_TO_WATCHLIST } from "../../components/utils/mutations";
+import {
+  useGetWatchlist,
+  useAddMovieToWatchlist,
+} from "../../hooks/watchlists";
 
 export default function Contact() {
   const [info, setInfo] = useState(SliderData[0]);
-  console.log(info);
+  const { data } = useGetWatchlist();
 
   const name = info.name;
   const image = info.image;
@@ -24,8 +28,13 @@ export default function Contact() {
       setInfo(JSON.parse(slide));
     }
   }
+  console.log(data[0]?.name);
 
-  const options = ["WatchList 1", "WatchList 2", "WatchList 3"];
+  const options: any[] = [];
+
+  data.forEach((item) => {
+    options.push(item.name);
+  });
 
   const [movie, setMovie] = useState(info.appearances);
   const [watchList, setWatchList] = useState(options[0]);
@@ -38,13 +47,10 @@ export default function Contact() {
     try {
       const { data } = await addWatchList({
         variables: {
-          title: name,
-          movies: [movie],
-          username: watchList,
+          name: name,
+          title: [movie],
         },
       });
-
-      console.log("Added to watchlist:", data.addWatchList);
     } catch (error) {
       console.error("Error adding to watchlist:", error);
     }
@@ -52,7 +58,7 @@ export default function Contact() {
 
   return (
     <div className="container justify-content-center my-5">
-      <div className="col-12 row bg-secondary rounded">
+      <div className="col-12 row bg-secondary py-3 rounded">
         <div className="col-12 col-md-4 row">
           <img
             src={image}

@@ -8,13 +8,10 @@ type Props = {
 // Had to convert to tsx due to issues with non-mapping of props
 export default function WatchLists({ watchLists }: Props) {
   function deleteMovie(movie) {
-    console.log("deleteMovie");
-    console.log(movie);
+
   }
 
   function deleteList(list) {
-    console.log("deleteList");
-    console.log(list);
   }
   return watchLists.map((list, index) => {
     return (
