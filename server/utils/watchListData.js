@@ -1,3 +1,3 @@
 // module.exports = {
-//     watchListData: require('./watchListData'),
+//     watchList: require('./watchList'),
 // };

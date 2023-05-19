@@ -16,7 +16,7 @@ const profileSchema = new Schema({
   watchlists: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'watchListData',
+      ref: 'watchList',
     },
   ]
 });
